@@ -89,7 +89,14 @@ fi
 TAG=$(date +%Y%m%d-%H%M%S)
 IMAGE="$REGION-docker.pkg.dev/$PROJECT/cqa/app:$TAG"
 log "Сборка образа в Cloud Build: $IMAGE"
-gcloud builds submit --tag "$IMAGE" --quiet .
+BUILD_ID=$(gcloud builds submit --tag "$IMAGE" --async --quiet --format="value(id)" .)
+echo "  build $BUILD_ID"
+while true; do
+  ST=$(gcloud builds describe "$BUILD_ID" --format="value(status)")
+  case "$ST" in SUCCESS) break;; FAILURE|INTERNAL_ERROR|TIMEOUT|CANCELLED|EXPIRED) echo "Сборка: $ST"; exit 1;; esac
+  sleep 10
+done
+echo "  сборка завершена"
 
 log "Деплой Cloud Run ($SERVICE)"
 ENV_VARS="CRITERIA_PROVIDER=openai,ANNOTATION_PROVIDER=gemini,OPENAI_MODEL=$(envval OPENAI_MODEL || true),GEMINI_MODEL=$(envval GEMINI_MODEL || true),DEFAULT_GROUP_ID=DEV,DAILY_BUDGET_USD=$BUDGET,RATE_LIMIT_PER_MIN=$RATE,BATCH_CONCURRENCY=8"
