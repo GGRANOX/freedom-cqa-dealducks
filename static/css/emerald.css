@@ -1,94 +1,66 @@
-/* Freedom Chess — изумрудная тема. Подключается после app.css и переопределяет токены.
-   Тёмная (по умолчанию): глубокий изумруд, стеклянные поверхности, золотые акценты.
-   Светлая: мятная бумага с изумрудом. */
-:root {
-  --em-1: #3fe0a0; --em-2: #1db97a; --em-3: #0e7a50; --gold: #f5c451; --gold-text: #8a6410;
-  --accent: #0f8a5a; --accent-hover: #0b7449; --accent-text: #0b6e46; --on-accent: #ffffff;
-  --accent-soft: rgba(29, 185, 122, .12); --accent-soft-2: rgba(29, 185, 122, .22);
-  --text: #0b2a1f; --text-2: #3f6656; --text-3: #557a6a;
-  --bg: #eef6f1; --surface: #ffffff; --surface-2: #f6fbf8;
-  --sep: rgba(14, 82, 56, .12); --sep-strong: rgba(14, 82, 56, .22);
-  --bubble-client: #e6efe9; --bubble-op: #d7f3e5;
-  --glass: rgba(246, 252, 249, .72);
-  --shadow-2: 0 6px 28px rgba(9, 60, 40, .08), 0 1px 3px rgba(9, 60, 40, .06);
-  --shadow-3: 0 24px 60px rgba(9, 60, 40, .22), 0 2px 8px rgba(9, 60, 40, .1);
-  --font-display: "Playfair Display", Georgia, "Times New Roman", serif;
-  --bg-image: radial-gradient(1200px 600px at 85% -10%, rgba(63, 224, 160, .18), transparent 60%),
-              radial-gradient(900px 500px at -10% 110%, rgba(245, 196, 81, .10), transparent 60%);
-}
+/* Freedom Chess — изумрудная тёмная тема. Подключается после app.css и действует только при data-theme="dark";
+   светлая тема остаётся прежней. */
 :root[data-theme="dark"] {
+  --em-1: #3fe0a0; --em-2: #1db97a; --em-3: #0e7a50; --gold: #f5c451;
   --accent: #1db97a; --accent-hover: #3fe0a0; --accent-text: #5cecb0; --on-accent: #04140d;
   --accent-soft: rgba(63, 224, 160, .12); --accent-soft-2: rgba(63, 224, 160, .24);
   --text: #f2fff8; --text-2: #a9c9bb; --text-3: #8fb3a3;
-  --bg: #06100d; --surface: rgba(14, 42, 33, .72); --surface-2: rgba(18, 52, 41, .8);
+  --bg: #06100d; --surface: rgba(14, 42, 33, .78); --surface-2: rgba(18, 52, 41, .85);
   --fill: rgba(169, 201, 187, .12); --fill-2: rgba(169, 201, 187, .07);
   --sep: rgba(46, 107, 85, .45); --sep-strong: rgba(46, 107, 85, .8);
-  --bubble-client: rgba(169, 201, 187, .1); --bubble-op: rgba(29, 185, 122, .2);
-  --glass: rgba(8, 24, 19, .7);
-  --gold-text: #f5c451;
+  --green-text: #5cecb0; --green-bg: rgba(63, 224, 160, .16);
+  --red: #ff6b5e; --red-text: #ff8a7f; --red-bg: rgba(255, 107, 94, .16);
+  --orange: #f5c451; --orange-text: #f5c451; --orange-bg: rgba(245, 196, 81, .16);
+  --bubble-client: rgba(169, 201, 187, .1); --bubble-op: rgba(29, 185, 122, .22);
+  --mark: rgba(245, 196, 81, .3); --mark-strong: rgba(245, 196, 81, .5);
+  --glass: rgba(8, 24, 19, .72);
   --shadow-1: 0 0 0 1px rgba(46, 107, 85, .35);
   --shadow-2: 0 0 0 1px rgba(46, 107, 85, .45), 0 10px 40px rgba(0, 0, 0, .45);
   --shadow-3: 0 30px 80px rgba(0, 0, 0, .7), 0 0 0 1px rgba(63, 224, 160, .25);
-  --bg-image: radial-gradient(1100px 700px at 80% -15%, rgba(29, 185, 122, .28), transparent 60%),
-              radial-gradient(800px 600px at -5% 105%, rgba(63, 224, 160, .14), transparent 60%),
-              radial-gradient(600px 400px at 50% 50%, rgba(245, 196, 81, .04), transparent 70%);
+  --font-display: "Playfair Display", Georgia, "Times New Roman", serif;
 }
 
-body { background: var(--bg) var(--bg-image) fixed; }
-/* водяной знак — шахматный конь в углу */
-body::before {
+:root[data-theme="dark"] body {
+  background: var(--bg) fixed;
+  background-image: radial-gradient(1100px 700px at 80% -15%, rgba(29, 185, 122, .28), transparent 60%),
+                    radial-gradient(800px 600px at -5% 105%, rgba(63, 224, 160, .12), transparent 60%);
+}
+/* водяной знак — шахматный конь */
+:root[data-theme="dark"] body::before {
   content: ""; position: fixed; right: -60px; bottom: -40px; width: 460px; height: 460px; pointer-events: none; z-index: 0;
-  opacity: .07; background: var(--em-2);
+  opacity: .08; background: linear-gradient(160deg, var(--em-1), var(--em-3));
   -webkit-mask: url("/static/img/knight.svg") center / contain no-repeat; mask: url("/static/img/knight.svg") center / contain no-repeat;
 }
-:root[data-theme="dark"] body::before { opacity: .09; background: linear-gradient(160deg, var(--em-1), var(--em-3)); }
-.shell { position: relative; z-index: 1; }
+:root[data-theme="dark"] .shell { position: relative; z-index: 1; }
 
-h1 { font-weight: 700; letter-spacing: -.01em; }
-h2 { letter-spacing: -.005em; }
-
-/* боковая панель — тёмное стекло с изумрудной кромкой */
-.sidebar { border-right: 1px solid var(--sep); box-shadow: inset -1px 0 0 rgba(63, 224, 160, .06); }
-.brand-mark {
-  width: 34px; height: 34px; border-radius: 10px; font-size: 0; color: transparent; position: relative;
+:root[data-theme="dark"] h1 { font-weight: 700; letter-spacing: -.005em; }
+:root[data-theme="dark"] .sidebar { box-shadow: inset -1px 0 0 rgba(63, 224, 160, .06); }
+:root[data-theme="dark"] .brand-mark {
+  font-size: 0; color: transparent; position: relative;
   background: radial-gradient(circle at 30% 25%, #6ff5c0, #1db97a 45%, #0b5c3d 100%);
-  box-shadow: 0 4px 14px rgba(29, 185, 122, .45), inset 0 1px 0 rgba(255, 255, 255, .45), inset 0 -2px 6px rgba(0, 0, 0, .25);
+  box-shadow: 0 4px 14px rgba(29, 185, 122, .45), inset 0 1px 0 rgba(255, 255, 255, .45);
 }
-.brand-mark::after {
+:root[data-theme="dark"] .brand-mark::after {
   content: ""; position: absolute; inset: 6px; background: #f2fff8;
   -webkit-mask: url("/static/img/knight.svg") center / contain no-repeat; mask: url("/static/img/knight.svg") center / contain no-repeat;
 }
-.brand-text b { font-family: var(--font-display); font-size: 17px; letter-spacing: .01em; }
-.brand-text small { color: var(--gold-text); letter-spacing: .06em; text-transform: uppercase; font-size: 10px; font-weight: 600; }
-.nav-item.active { background: var(--accent-soft-2); color: var(--accent-text); box-shadow: inset 2px 0 0 var(--em-2); }
-.side-label { color: var(--gold-text); letter-spacing: .08em; }
+:root[data-theme="dark"] .brand-text b { font-family: var(--font-display); font-size: 17px; letter-spacing: .01em; }
+:root[data-theme="dark"] .brand-text small { color: var(--gold); letter-spacing: .08em; text-transform: uppercase; font-size: 10px; font-weight: 700; }
+:root[data-theme="dark"] .side-label { color: var(--gold); letter-spacing: .08em; }
 
-/* кнопки — изумрудный «камень» */
-.btn.primary {
-  background: linear-gradient(180deg, var(--em-2), var(--em-3)); color: #fff;
-  box-shadow: 0 6px 18px rgba(29, 185, 122, .35), inset 0 1px 0 rgba(255, 255, 255, .25);
+:root[data-theme="dark"] .btn.primary {
+  color: var(--on-accent); background: linear-gradient(180deg, var(--em-1), var(--em-2));
+  box-shadow: 0 6px 18px rgba(29, 185, 122, .35), inset 0 1px 0 rgba(255, 255, 255, .3);
 }
-.btn.primary:hover { background: linear-gradient(180deg, var(--em-1), var(--em-2)); color: #04140d; }
-:root[data-theme="dark"] .btn.primary { color: #04140d; background: linear-gradient(180deg, var(--em-1), var(--em-2)); }
+:root[data-theme="dark"] .btn.primary:hover { background: linear-gradient(180deg, #7ff0c4, var(--em-1)); }
 
-/* стеклянные карточки */
-.card, .group { backdrop-filter: blur(14px) saturate(140%); -webkit-backdrop-filter: blur(14px) saturate(140%); }
-:root[data-theme="dark"] .card, :root[data-theme="dark"] .group { border: 1px solid rgba(46, 107, 85, .35); box-shadow: 0 10px 40px rgba(0, 0, 0, .35); }
-.stat .v { font-family: var(--font-display); color: var(--accent-text); }
-:root[data-theme="dark"] .stat .v { background: linear-gradient(180deg, #b8ffe0, var(--em-1)); -webkit-background-clip: text; background-clip: text; color: transparent; }
-
-/* шахматная доска как тонкий орнамент под заголовком страницы */
-.page-head { position: relative; padding-bottom: 14px; }
-.page-head::after {
-  content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 4px; border-radius: 2px; opacity: .55;
-  background: repeating-linear-gradient(90deg, var(--em-2) 0 12px, transparent 12px 24px);
+:root[data-theme="dark"] .card, :root[data-theme="dark"] .group {
+  backdrop-filter: blur(14px) saturate(140%); -webkit-backdrop-filter: blur(14px) saturate(140%);
 }
+:root[data-theme="dark"] .stat .v { color: var(--em-1); }
+:root[data-theme="dark"] .chip.brand { background: rgba(245, 196, 81, .16); color: var(--gold); }
+:root[data-theme="dark"] .list-row.sel { box-shadow: inset 3px 0 0 var(--em-2); }
+:root[data-theme="dark"] ::selection { background: rgba(63, 224, 160, .3); }
 
-.chip.brand { background: rgba(245, 196, 81, .16); color: var(--gold-text); }
-.gross-flag { box-shadow: 0 0 0 1px rgba(255, 107, 94, .5), 0 0 18px rgba(255, 107, 94, .25); }
-.list-row.sel { box-shadow: inset 3px 0 0 var(--em-2); }
-.input:focus { box-shadow: 0 0 0 3px var(--accent-soft-2); border-color: var(--em-2); }
-::selection { background: rgba(63, 224, 160, .3); }
-
-@media (max-width: 900px) { body::before { width: 280px; height: 280px; } }
-@media (prefers-reduced-motion: reduce) { body { background-attachment: scroll; } }
+@media (max-width: 900px) { :root[data-theme="dark"] body::before { width: 280px; height: 280px; } }
+@media (prefers-reduced-motion: reduce) { :root[data-theme="dark"] body { background-attachment: scroll; } }
