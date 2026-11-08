@@ -1,0 +1,555 @@
+{
+  "$defs": {
+    "Annotation": {
+      "properties": {
+        "message_index": {
+          "title": "Message Index",
+          "type": "integer"
+        },
+        "symbol": {
+          "enum": [
+            "!!",
+            "!",
+            "?!",
+            "?",
+            "??"
+          ],
+          "title": "Symbol",
+          "type": "string"
+        },
+        "comment": {
+          "default": "",
+          "title": "Comment",
+          "type": "string"
+        },
+        "best_move": {
+          "default": "",
+          "title": "Best Move",
+          "type": "string"
+        },
+        "criterion_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Criterion Ids",
+          "type": "array"
+        }
+      },
+      "required": [
+        "message_index",
+        "symbol"
+      ],
+      "title": "Annotation",
+      "type": "object"
+    },
+    "Appeal": {
+      "properties": {
+        "appeal_id": {
+          "title": "Appeal Id",
+          "type": "string"
+        },
+        "criterion_id": {
+          "title": "Criterion Id",
+          "type": "string"
+        },
+        "comment": {
+          "title": "Comment",
+          "type": "string"
+        },
+        "status": {
+          "default": "open",
+          "enum": [
+            "open",
+            "confirmed",
+            "changed"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "created_at": {
+          "default": "",
+          "title": "Created At",
+          "type": "string"
+        },
+        "original": {
+          "additionalProperties": true,
+          "title": "Original",
+          "type": "object"
+        },
+        "decision": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/AppealDecision"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "final": {
+          "additionalProperties": true,
+          "title": "Final",
+          "type": "object"
+        }
+      },
+      "required": [
+        "appeal_id",
+        "criterion_id",
+        "comment"
+      ],
+      "title": "Appeal",
+      "type": "object"
+    },
+    "AppealDecision": {
+      "properties": {
+        "new_answer": {
+          "anyOf": [
+            {
+              "enum": [
+                "yes",
+                "no",
+                "scale",
+                "na"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "New Answer"
+        },
+        "new_value": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "New Value"
+        },
+        "new_score": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "New Score"
+        },
+        "reason": {
+          "default": "",
+          "title": "Reason",
+          "type": "string"
+        }
+      },
+      "title": "AppealDecision",
+      "type": "object"
+    },
+    "CheckedRange": {
+      "properties": {
+        "from_index": {
+          "title": "From Index",
+          "type": "integer"
+        },
+        "to_index": {
+          "title": "To Index",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "from_index",
+        "to_index"
+      ],
+      "title": "CheckedRange",
+      "type": "object"
+    },
+    "CriterionResult": {
+      "properties": {
+        "criterion_id": {
+          "title": "Criterion Id",
+          "type": "string"
+        },
+        "name": {
+          "default": "",
+          "title": "Name",
+          "type": "string"
+        },
+        "answer": {
+          "enum": [
+            "yes",
+            "no",
+            "scale",
+            "na"
+          ],
+          "title": "Answer",
+          "type": "string"
+        },
+        "value": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Value"
+        },
+        "score": {
+          "default": 0,
+          "title": "Score",
+          "type": "number"
+        },
+        "max_score": {
+          "default": 0,
+          "title": "Max Score",
+          "type": "number"
+        },
+        "weight": {
+          "default": 0,
+          "title": "Weight",
+          "type": "number"
+        },
+        "effective_weight": {
+          "default": 0,
+          "title": "Effective Weight",
+          "type": "number"
+        },
+        "explanation": {
+          "default": "",
+          "title": "Explanation",
+          "type": "string"
+        },
+        "evidence": {
+          "items": {
+            "$ref": "#/$defs/Evidence"
+          },
+          "title": "Evidence",
+          "type": "array"
+        },
+        "checked_range": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/CheckedRange"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "na_reason": {
+          "default": "",
+          "title": "Na Reason",
+          "type": "string"
+        },
+        "confidence": {
+          "default": 0,
+          "title": "Confidence",
+          "type": "number"
+        },
+        "low_confidence": {
+          "default": false,
+          "title": "Low Confidence",
+          "type": "boolean"
+        },
+        "votes": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Votes",
+          "type": "array"
+        }
+      },
+      "required": [
+        "criterion_id",
+        "answer"
+      ],
+      "title": "CriterionResult",
+      "type": "object"
+    },
+    "Evidence": {
+      "properties": {
+        "message_index": {
+          "title": "Message Index",
+          "type": "integer"
+        },
+        "timestamp": {
+          "default": "",
+          "title": "Timestamp",
+          "type": "string"
+        },
+        "quote": {
+          "title": "Quote",
+          "type": "string"
+        },
+        "verified": {
+          "default": false,
+          "title": "Verified",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "message_index",
+        "quote"
+      ],
+      "title": "Evidence",
+      "type": "object"
+    },
+    "GrossError": {
+      "properties": {
+        "flag": {
+          "default": false,
+          "title": "Flag",
+          "type": "boolean"
+        },
+        "criterion_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Criterion Id"
+        },
+        "reason": {
+          "default": "",
+          "title": "Reason",
+          "type": "string"
+        }
+      },
+      "title": "GrossError",
+      "type": "object"
+    },
+    "Metrics": {
+      "description": "Детерминированные метрики (считаются кодом, без модели).",
+      "properties": {
+        "first_response_sec": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "First Response Sec"
+        },
+        "avg_response_sec": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Avg Response Sec"
+        },
+        "max_pause_sec": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Max Pause Sec"
+        },
+        "operator_talk_share": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Operator Talk Share"
+        },
+        "operator_messages": {
+          "default": 0,
+          "title": "Operator Messages",
+          "type": "integer"
+        },
+        "client_messages": {
+          "default": 0,
+          "title": "Client Messages",
+          "type": "integer"
+        }
+      },
+      "title": "Metrics",
+      "type": "object"
+    },
+    "SectionResult": {
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "score": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Score"
+        },
+        "max_score": {
+          "default": 0,
+          "title": "Max Score",
+          "type": "number"
+        }
+      },
+      "required": [
+        "id",
+        "name"
+      ],
+      "title": "SectionResult",
+      "type": "object"
+    },
+    "SentimentPoint": {
+      "properties": {
+        "message_index": {
+          "title": "Message Index",
+          "type": "integer"
+        },
+        "value": {
+          "title": "Value",
+          "type": "number"
+        }
+      },
+      "required": [
+        "message_index",
+        "value"
+      ],
+      "title": "SentimentPoint",
+      "type": "object"
+    }
+  },
+  "properties": {
+    "evaluation_id": {
+      "default": "",
+      "title": "Evaluation Id",
+      "type": "string"
+    },
+    "conversation_id": {
+      "title": "Conversation Id",
+      "type": "string"
+    },
+    "checklist_id": {
+      "title": "Checklist Id",
+      "type": "string"
+    },
+    "checklist_version": {
+      "title": "Checklist Version",
+      "type": "integer"
+    },
+    "model": {
+      "default": "",
+      "title": "Model",
+      "type": "string"
+    },
+    "cost_usd": {
+      "default": 0,
+      "title": "Cost Usd",
+      "type": "number"
+    },
+    "duration_ms": {
+      "default": 0,
+      "title": "Duration Ms",
+      "type": "integer"
+    },
+    "created_at": {
+      "default": "",
+      "title": "Created At",
+      "type": "string"
+    },
+    "total_score": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Total Score"
+    },
+    "gross_error": {
+      "$ref": "#/$defs/GrossError"
+    },
+    "sections": {
+      "items": {
+        "$ref": "#/$defs/SectionResult"
+      },
+      "title": "Sections",
+      "type": "array"
+    },
+    "criteria": {
+      "items": {
+        "$ref": "#/$defs/CriterionResult"
+      },
+      "title": "Criteria",
+      "type": "array"
+    },
+    "annotations": {
+      "items": {
+        "$ref": "#/$defs/Annotation"
+      },
+      "title": "Annotations",
+      "type": "array"
+    },
+    "sentiment_curve": {
+      "items": {
+        "$ref": "#/$defs/SentimentPoint"
+      },
+      "title": "Sentiment Curve",
+      "type": "array"
+    },
+    "metrics": {
+      "$ref": "#/$defs/Metrics"
+    },
+    "appeals": {
+      "items": {
+        "$ref": "#/$defs/Appeal"
+      },
+      "title": "Appeals",
+      "type": "array"
+    }
+  },
+  "required": [
+    "conversation_id",
+    "checklist_id",
+    "checklist_version"
+  ],
+  "title": "EvaluationResult",
+  "type": "object"
+}

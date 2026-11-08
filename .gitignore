@@ -1,0 +1,14 @@
+.env
+data/organizers_api.txt
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+data/*.db*
+data/dev.json
+data/out/
+data/runs/*/p*.json
+gcp-key.json
+data/.db_password
+data/.deployed_url
+data/e2e/

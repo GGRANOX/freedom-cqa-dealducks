@@ -1,0 +1,2081 @@
+{
+ "p1-ru-001": {
+  "judgments": {
+   "c01": {
+    "answer": "yes"
+   },
+   "c02": {
+    "answer": "na"
+   },
+   "c03": {
+    "answer": "na"
+   },
+   "c04": {
+    "answer": "scale",
+    "value": 20
+   },
+   "c05": {
+    "answer": "yes"
+   },
+   "c06": {
+    "answer": "scale",
+    "value": 10
+   },
+   "c07": {
+    "answer": "no"
+   },
+   "c08": {
+    "answer": "no"
+   }
+  },
+  "note": "прощание без итога/предложения помощи",
+  "total_score": 92.31
+ },
+ "p1-ru-002": {
+  "judgments": {
+   "c01": {
+    "answer": "yes"
+   },
+   "c02": {
+    "answer": "yes"
+   },
+   "c03": {
+    "answer": "na"
+   },
+   "c04": {
+    "answer": "scale",
+    "value": 20
+   },
+   "c05": {
+    "answer": "yes"
+   },
+   "c06": {
+    "answer": "scale",
+    "value": 10
+   },
+   "c07": {
+    "answer": "yes"
+   },
+   "c08": {
+    "answer": "no"
+   }
+  },
+  "note": "данные не раскрыты, идентификация не проводилась; дан корректный следующий шаг",
+  "total_score": 100.0
+ },
+ "p1-ru-003": {
+  "judgments": {
+   "c01": {
+    "answer": "yes"
+   },
+   "c02": {
+    "answer": "yes"
+   },
+   "c03": {
+    "answer": "na"
+   },
+   "c04": {
+    "answer": "scale",
+    "value": 10
+   },
+   "c05": {
+    "answer": "yes"
+   },
+   "c06": {
+    "answer": "scale",
+    "value": 4
+   },
+   "c07": {
+    "answer": "no"
+   },
+   "c08": {
+    "answer": "no"
+   }
+  },
+  "note": "вопрос о комиссии проигнорирован",
+  "total_score": 70.0
+ },
+ "p1-ru-004": {
+  "judgments": {
+   "c01": {
+    "answer": "yes"
+   },
+   "c02": {
+    "answer": "na"
+   },
+   "c03": {
+    "answer": "na"
+   },
+   "c04": {
+    "answer": "scale",
+    "value": 20
+   },
+   "c05": {
+    "answer": "yes"
+   },
+   "c06": {
+    "answer": "scale",
+    "value": 10
+   },
+   "c07": {
+    "answer": "no"
+   },
+   "c08": {
+    "answer": "no"
+   }
+  },
+  "note": "",
+  "total_score": 92.31
+ },
+ "p1-ru-005": {
+  "judgments": {
+   "c01": {
+    "answer": "yes"
+   },
+   "c02": {
+    "answer": "na"
+   },
+   "c03": {
+    "answer": "na"
+   },
+   "c04": {
+    "answer": "scale",
+    "value": 15
+   },
+   "c05": {
+    "answer": "yes"
+   },
+   "c06": {
+    "answer": "scale",
+    "value": 4
+   },
+   "c07": {
+    "answer": "yes"
+   },
+   "c08": {
+    "answer": "no"
+   }
+  },
+  "note": "клиенту пришлось переспросить «в каком меню»",
+  "total_score": 78.46
+ },
+ "p1-ru-006": {
+  "judgments": {
+   "c01": {
+    "answer": "yes"
+   },
+   "c02": {
+    "answer": "yes"
+   },
+   "c03": {
+    "answer": "yes"
+   },
+   "c04": {
+    "answer": "scale",
+    "value": 20
+   },
+   "c05": {
+    "answer": "yes"
+   },
+   "c06": {
+    "answer": "scale",
+    "value": 10
+   },
+   "c07": {
+    "answer": "yes"
+   },
+   "c08": {
+    "answer": "no"
+   }
+  },
+  "note": "идентификация до проверки платежа",
+  "total_score": 100.0
+ },
+ "p1-ru-007": {
+  "judgments": {
+   "c01": {
+    "answer": "yes"
+   },
+   "c02": {
+    "answer": "na"
+   },
+   "c03": {
+    "answer": "na"
+   },
+   "c04": {
+    "answer": "scale",
+    "value": 10
+   },
+   "c05": {
+    "answer": "yes"
+   },
+   "c06": {
+    "answer": "scale",
+    "value": 7
+   },
+   "c07": {
+    "answer": "yes"
+   },
+   "c08": {
+    "answer": "no"
+   }
+  },
+  "note": "вопрос «когда снова подавать вывод» без ответа",
+  "total_score": 77.69
+ },
+ "p1-ru-008": {
+  "judgments": {
+   "c01": {
+    "answer": "yes"
+   },
+   "c02": {
+    "answer": "na"
+   },
+   "c03": {
+    "answer": "na"
+   },
+   "c04": {
+    "answer": "scale",
+    "value": 20
+   },
+   "c05": {
+    "answer": "yes"
+   },
+   "c06": {
+    "answer": "scale",
+    "value": 10
+   },
+   "c07": {
+    "answer": "no"
+   },
+   "c08": {
+    "answer": "no"
+   }
+  },
+  "note": "",
+  "total_score": 92.31
+ },
+ "p1-ru-009": {
+  "judgments": {
+   "c01": {
+    "answer": "yes"
+   },
+   "c02": {
+    "answer": "yes"
+   },
+   "c03": {
+    "answer": "no"
+   },
+   "c04": {
+    "answer": "scale",
+    "value": 10
+   },
+   "c05": {
+    "answer": "no"
+   },
+   "c06": {
+    "answer": "scale",
+    "value": 4
+   },
+   "c07": {
+    "answer": "yes"
+   },
+   "c08": {
+    "answer": "yes"
+   }
+  },
+  "note": "раскрыл ограничение по счёту без идентификации; c08 спорно (раскрытие владельцу без проверки)",
+  "total_score": 46.0
+ },
+ "p1-ru-010": {
+  "judgments": {
+   "c01": {
+    "answer": "yes"
+   },
+   "c02": {
+    "answer": "yes"
+   },
+   "c03": {
+    "answer": "yes"
+   },
+   "c04": {
+    "answer": "scale",
+    "value": 20
+   },
+   "c05": {
+    "answer": "yes"
+   },
+   "c06": {
+    "answer": "scale",
+    "value": 10
+   },
+   "c07": {
+    "answer": "yes"
+   },
+   "c08": {
+    "answer": "no"
+   }
+  },
+  "note": "",
+  "total_score": 100.0
+ },
+ "p1-ru-011": {
+  "judgments": {
+   "c01": {
+    "answer": "yes"
+   },
+   "c02": {
+    "answer": "na"
+   },
+   "c03": {
+    "answer": "na"
+   },
+   "c04": {
+    "answer": "scale",
+    "value": 20
+   },
+   "c05": {
+    "answer": "yes"
+   },
+   "c06": {
+    "answer": "scale",
+    "value": 10
+   },
+   "c07": {
+    "answer": "no"
+   },
+   "c08": {
+    "answer": "no"
+   }
+  },
+  "note": "",
+  "total_score": 92.31
+ },
+ "p1-ru-012": {
+  "judgments": {
+   "c01": {
+    "answer": "yes"
+   },
+   "c02": {
+    "answer": "na"
+   },
+   "c03": {
+    "answer": "na"
+   },
+   "c04": {
+    "answer": "scale",
+    "value": 20
+   },
+   "c05": {
+    "answer": "yes"
+   },
+   "c06": {
+    "answer": "scale",
+    "value": 10
+   },
+   "c07": {
+    "answer": "na"
+   },
+   "c08": {
+    "answer": "no"
+   }
+  },
+  "note": "соединение прервано после ответа клиента",
+  "total_score": 100.0
+ },
+ "p1-ru-013": {
+  "judgments": {
+   "c01": {
+    "answer": "yes"
+   },
+   "c02": {
+    "answer": "na"
+   },
+   "c03": {
+    "answer": "na"
+   },
+   "c04": {
+    "answer": "scale",
+    "value": 20
+   },
+   "c05": {
+    "answer": "yes"
+   },
+   "c06": {
+    "answer": "scale",
+    "value": 10
+   },
+   "c07": {
+    "answer": "yes"
+   },
+   "c08": {
+    "answer": "no"
+   }
+  },
+  "note": "итог «нужный раздел в меню для инвесторов»",
+  "total_score": 100.0
+ },
+ "p1-ru-014": {
+  "judgments": {
+   "c01": {
+    "answer": "no"
+   },
+   "c02": {
+    "answer": "no"
+   },
+   "c03": {
+    "answer": "na"
+   },
+   "c04": {
+    "answer": "scale",
+    "value": 20
+   },
+   "c05": {
+    "answer": "yes"
+   },
+   "c06": {
+    "answer": "scale",
+    "value": 4
+   },
+   "c07": {
+    "answer": "no"
+   },
+   "c08": {
+    "answer": "no"
+   }
+  },
+  "note": "«Привет», без имени; переспросил уже сказанное",
+  "total_score": 51.25
+ },
+ "p1-ru-015": {
+  "judgments": {
+   "c01": {
+    "answer": "yes"
+   },
+   "c02": {
+    "answer": "na"
+   },
+   "c03": {
+    "answer": "na"
+   },
+   "c04": {
+    "answer": "scale",
+    "value": 20
+   },
+   "c05": {
+    "answer": "yes"
+   },
+   "c06": {
+    "answer": "scale",
+    "value": 10
+   },
+   "c07": {
+    "answer": "yes"
+   },
+   "c08": {
+    "answer": "no"
+   }
+  },
+  "note": "",
+  "total_score": 100.0
+ },
+ "p1-ru-016": {
+  "judgments": {
+   "c01": {
+    "answer": "yes"
+   },
+   "c02": {
+    "answer": "no"
+   },
+   "c03": {
+    "answer": "na"
+   },
+   "c04": {
+    "answer": "scale",
+    "value": 20
+   },
+   "c05": {
+    "answer": "yes"
+   },
+   "c06": {
+    "answer": "scale",
+    "value": 4
+   },
+   "c07": {
+    "answer": "no"
+   },
+   "c08": {
+    "answer": "no"
+   }
+  },
+  "note": "не уточнил «не пускает», угадывал",
+  "total_score": 63.75
+ },
+ "p1-ru-017": {
+  "judgments": {
+   "c01": {
+    "answer": "yes"
+   },
+   "c02": {
+    "answer": "yes"
+   },
+   "c03": {
+    "answer": "na"
+   },
+   "c04": {
+    "answer": "scale",
+    "value": 20
+   },
+   "c05": {
+    "answer": "yes"
+   },
+   "c06": {
+    "answer": "scale",
+    "value": 10
+   },
+   "c07": {
+    "answer": "no"
+   },
+   "c08": {
+    "answer": "no"
+   }
+  },
+  "note": "",
+  "total_score": 93.75
+ },
+ "p1-ru-018": {
+  "judgments": {
+   "c01": {
+    "answer": "yes"
+   },
+   "c02": {
+    "answer": "no"
+   },
+   "c03": {
+    "answer": "no"
+   },
+   "c04": {
+    "answer": "scale",
+    "value": 0
+   },
+   "c05": {
+    "answer": "no"
+   },
+   "c06": {
+    "answer": "scale",
+    "value": 4
+   },
+   "c07": {
+    "answer": "no"
+   },
+   "c08": {
+    "answer": "no"
+   }
+  },
+  "note": "ошибочное утверждение без данных, «Тогда не знаю», закрыл чат",
+  "total_score": 16.0
+ },
+ "p1-ru-019": {
+  "judgments": {
+   "c01": {
+    "answer": "yes"
+   },
+   "c02": {
+    "answer": "yes"
+   },
+   "c03": {
+    "answer": "na"
+   },
+   "c04": {
+    "answer": "scale",
+    "value": 20
+   },
+   "c05": {
+    "answer": "yes"
+   },
+   "c06": {
+    "answer": "scale",
+    "value": 10
+   },
+   "c07": {
+    "answer": "no"
+   },
+   "c08": {
+    "answer": "no"
+   }
+  },
+  "note": "",
+  "total_score": 93.75
+ },
+ "p1-ru-020": {
+  "judgments": {
+   "c01": {
+    "answer": "yes"
+   },
+   "c02": {
+    "answer": "na"
+   },
+   "c03": {
+    "answer": "na"
+   },
+   "c04": {
+    "answer": "scale",
+    "value": 20
+   },
+   "c05": {
+    "answer": "yes"
+   },
+   "c06": {
+    "answer": "scale",
+    "value": 10
+   },
+   "c07": {
+    "answer": "no"
+   },
+   "c08": {
+    "answer": "no"
+   }
+  },
+  "note": "",
+  "total_score": 92.31
+ },
+ "p1-ru-021": {
+  "judgments": {
+   "c01": {
+    "answer": "yes"
+   },
+   "c02": {
+    "answer": "na"
+   },
+   "c03": {
+    "answer": "na"
+   },
+   "c04": {
+    "answer": "scale",
+    "value": 20
+   },
+   "c05": {
+    "answer": "yes"
+   },
+   "c06": {
+    "answer": "scale",
+    "value": 10
+   },
+   "c07": {
+    "answer": "no"
+   },
+   "c08": {
+    "answer": "no"
+   }
+  },
+  "note": "",
+  "total_score": 92.31
+ },
+ "p1-ru-022": {
+  "judgments": {
+   "c01": {
+    "answer": "yes"
+   },
+   "c02": {
+    "answer": "na"
+   },
+   "c03": {
+    "answer": "na"
+   },
+   "c04": {
+    "answer": "scale",
+    "value": 0
+   },
+   "c05": {
+    "answer": "no"
+   },
+   "c06": {
+    "answer": "scale",
+    "value": 10
+   },
+   "c07": {
+    "answer": "no"
+   },
+   "c08": {
+    "answer": "yes"
+   }
+  },
+  "note": "предложил перевести деньги лично",
+  "total_score": 38.46
+ },
+ "p1-ru-023": {
+  "judgments": {
+   "c01": {
+    "answer": "yes"
+   },
+   "c02": {
+    "answer": "na"
+   },
+   "c03": {
+    "answer": "na"
+   },
+   "c04": {
+    "answer": "scale",
+    "value": 20
+   },
+   "c05": {
+    "answer": "yes"
+   },
+   "c06": {
+    "answer": "scale",
+    "value": 10
+   },
+   "c07": {
+    "answer": "no"
+   },
+   "c08": {
+    "answer": "yes"
+   }
+  },
+  "note": "частная платная консультация по личному номеру",
+  "total_score": 92.31
+ },
+ "p1-ru-024": {
+  "judgments": {
+   "c01": {
+    "answer": "yes"
+   },
+   "c02": {
+    "answer": "na"
+   },
+   "c03": {
+    "answer": "na"
+   },
+   "c04": {
+    "answer": "scale",
+    "value": 20
+   },
+   "c05": {
+    "answer": "yes"
+   },
+   "c06": {
+    "answer": "scale",
+    "value": 10
+   },
+   "c07": {
+    "answer": "no"
+   },
+   "c08": {
+    "answer": "no"
+   }
+  },
+  "note": "",
+  "total_score": 92.31
+ },
+ "p1-ru-025": {
+  "judgments": {
+   "c01": {
+    "answer": "yes"
+   },
+   "c02": {
+    "answer": "yes"
+   },
+   "c03": {
+    "answer": "na"
+   },
+   "c04": {
+    "answer": "na"
+   },
+   "c05": {
+    "answer": "yes"
+   },
+   "c06": {
+    "answer": "scale",
+    "value": 10
+   },
+   "c07": {
+    "answer": "na"
+   },
+   "c08": {
+    "answer": "no"
+   }
+  },
+  "note": "клиент ушёл до запроса",
+  "total_score": 100.0
+ },
+ "p1-ru-026": {
+  "judgments": {
+   "c01": {
+    "answer": "yes"
+   },
+   "c02": {
+    "answer": "no"
+   },
+   "c03": {
+    "answer": "na"
+   },
+   "c04": {
+    "answer": "scale",
+    "value": 0
+   },
+   "c05": {
+    "answer": "no"
+   },
+   "c06": {
+    "answer": "scale",
+    "value": 4
+   },
+   "c07": {
+    "answer": "no"
+   },
+   "c08": {
+    "answer": "no"
+   }
+  },
+  "note": "переспросил, «Всё есть в приложении», закрыл чат",
+  "total_score": 20.0
+ },
+ "p1-ru-027": {
+  "judgments": {
+   "c01": {
+    "answer": "yes"
+   },
+   "c02": {
+    "answer": "na"
+   },
+   "c03": {
+    "answer": "na"
+   },
+   "c04": {
+    "answer": "scale",
+    "value": 20
+   },
+   "c05": {
+    "answer": "yes"
+   },
+   "c06": {
+    "answer": "scale",
+    "value": 10
+   },
+   "c07": {
+    "answer": "no"
+   },
+   "c08": {
+    "answer": "no"
+   }
+  },
+  "note": "",
+  "total_score": 92.31
+ },
+ "p1-ru-028": {
+  "judgments": {
+   "c01": {
+    "answer": "yes"
+   },
+   "c02": {
+    "answer": "na"
+   },
+   "c03": {
+    "answer": "na"
+   },
+   "c04": {
+    "answer": "scale",
+    "value": 20
+   },
+   "c05": {
+    "answer": "yes"
+   },
+   "c06": {
+    "answer": "scale",
+    "value": 10
+   },
+   "c07": {
+    "answer": "no"
+   },
+   "c08": {
+    "answer": "no"
+   }
+  },
+  "note": "предупредил об ожидании",
+  "total_score": 92.31
+ },
+ "p1-ru-029": {
+  "judgments": {
+   "c01": {
+    "answer": "yes"
+   },
+   "c02": {
+    "answer": "na"
+   },
+   "c03": {
+    "answer": "na"
+   },
+   "c04": {
+    "answer": "scale",
+    "value": 20
+   },
+   "c05": {
+    "answer": "no"
+   },
+   "c06": {
+    "answer": "scale",
+    "value": 4
+   },
+   "c07": {
+    "answer": "no"
+   },
+   "c08": {
+    "answer": "yes"
+   }
+  },
+  "note": "оскорбление «Вы вообще читать умеете?»",
+  "total_score": 55.38
+ },
+ "p1-ru-030": {
+  "judgments": {
+   "c01": {
+    "answer": "yes"
+   },
+   "c02": {
+    "answer": "yes"
+   },
+   "c03": {
+    "answer": "na"
+   },
+   "c04": {
+    "answer": "scale",
+    "value": 20
+   },
+   "c05": {
+    "answer": "yes"
+   },
+   "c06": {
+    "answer": "scale",
+    "value": 10
+   },
+   "c07": {
+    "answer": "no"
+   },
+   "c08": {
+    "answer": "no"
+   }
+  },
+  "note": "",
+  "total_score": 93.75
+ },
+ "p1-en-001": {
+  "judgments": {
+   "c01": {
+    "answer": "yes"
+   },
+   "c02": {
+    "answer": "na"
+   },
+   "c03": {
+    "answer": "na"
+   },
+   "c04": {
+    "answer": "scale",
+    "value": 20
+   },
+   "c05": {
+    "answer": "yes"
+   },
+   "c06": {
+    "answer": "scale",
+    "value": 10
+   },
+   "c07": {
+    "answer": "no"
+   },
+   "c08": {
+    "answer": "no"
+   }
+  },
+  "note": "",
+  "total_score": 92.31
+ },
+ "p1-en-002": {
+  "judgments": {
+   "c01": {
+    "answer": "yes"
+   },
+   "c02": {
+    "answer": "na"
+   },
+   "c03": {
+    "answer": "na"
+   },
+   "c04": {
+    "answer": "scale",
+    "value": 20
+   },
+   "c05": {
+    "answer": "yes"
+   },
+   "c06": {
+    "answer": "scale",
+    "value": 10
+   },
+   "c07": {
+    "answer": "no"
+   },
+   "c08": {
+    "answer": "no"
+   }
+  },
+  "note": "",
+  "total_score": 92.31
+ },
+ "p1-en-003": {
+  "judgments": {
+   "c01": {
+    "answer": "yes"
+   },
+   "c02": {
+    "answer": "na"
+   },
+   "c03": {
+    "answer": "na"
+   },
+   "c04": {
+    "answer": "scale",
+    "value": 20
+   },
+   "c05": {
+    "answer": "yes"
+   },
+   "c06": {
+    "answer": "scale",
+    "value": 10
+   },
+   "c07": {
+    "answer": "no"
+   },
+   "c08": {
+    "answer": "no"
+   }
+  },
+  "note": "",
+  "total_score": 92.31
+ },
+ "p1-en-004": {
+  "judgments": {
+   "c01": {
+    "answer": "yes"
+   },
+   "c02": {
+    "answer": "na"
+   },
+   "c03": {
+    "answer": "na"
+   },
+   "c04": {
+    "answer": "scale",
+    "value": 20
+   },
+   "c05": {
+    "answer": "yes"
+   },
+   "c06": {
+    "answer": "scale",
+    "value": 10
+   },
+   "c07": {
+    "answer": "no"
+   },
+   "c08": {
+    "answer": "no"
+   }
+  },
+  "note": "",
+  "total_score": 92.31
+ },
+ "p1-en-005": {
+  "judgments": {
+   "c01": {
+    "answer": "yes"
+   },
+   "c02": {
+    "answer": "na"
+   },
+   "c03": {
+    "answer": "na"
+   },
+   "c04": {
+    "answer": "scale",
+    "value": 20
+   },
+   "c05": {
+    "answer": "yes"
+   },
+   "c06": {
+    "answer": "scale",
+    "value": 10
+   },
+   "c07": {
+    "answer": "no"
+   },
+   "c08": {
+    "answer": "no"
+   }
+  },
+  "note": "",
+  "total_score": 92.31
+ },
+ "p1-en-006": {
+  "judgments": {
+   "c01": {
+    "answer": "yes"
+   },
+   "c02": {
+    "answer": "yes"
+   },
+   "c03": {
+    "answer": "yes"
+   },
+   "c04": {
+    "answer": "scale",
+    "value": 20
+   },
+   "c05": {
+    "answer": "yes"
+   },
+   "c06": {
+    "answer": "scale",
+    "value": 10
+   },
+   "c07": {
+    "answer": "yes"
+   },
+   "c08": {
+    "answer": "no"
+   }
+  },
+  "note": "",
+  "total_score": 100.0
+ },
+ "p1-en-007": {
+  "judgments": {
+   "c01": {
+    "answer": "yes"
+   },
+   "c02": {
+    "answer": "na"
+   },
+   "c03": {
+    "answer": "na"
+   },
+   "c04": {
+    "answer": "scale",
+    "value": 10
+   },
+   "c05": {
+    "answer": "yes"
+   },
+   "c06": {
+    "answer": "scale",
+    "value": 7
+   },
+   "c07": {
+    "answer": "yes"
+   },
+   "c08": {
+    "answer": "no"
+   }
+  },
+  "note": "вопрос «когда повторить вывод» проигнорирован",
+  "total_score": 77.69
+ },
+ "p1-en-008": {
+  "judgments": {
+   "c01": {
+    "answer": "yes"
+   },
+   "c02": {
+    "answer": "na"
+   },
+   "c03": {
+    "answer": "na"
+   },
+   "c04": {
+    "answer": "scale",
+    "value": 15
+   },
+   "c05": {
+    "answer": "yes"
+   },
+   "c06": {
+    "answer": "scale",
+    "value": 10
+   },
+   "c07": {
+    "answer": "no"
+   },
+   "c08": {
+    "answer": "no"
+   }
+  },
+  "note": "ответ про существующую позицию размыт",
+  "total_score": 84.62
+ },
+ "p1-en-009": {
+  "judgments": {
+   "c01": {
+    "answer": "yes"
+   },
+   "c02": {
+    "answer": "na"
+   },
+   "c03": {
+    "answer": "na"
+   },
+   "c04": {
+    "answer": "scale",
+    "value": 20
+   },
+   "c05": {
+    "answer": "yes"
+   },
+   "c06": {
+    "answer": "scale",
+    "value": 10
+   },
+   "c07": {
+    "answer": "na"
+   },
+   "c08": {
+    "answer": "no"
+   }
+  },
+  "note": "связь с клиентом потеряна",
+  "total_score": 100.0
+ },
+ "p1-en-010": {
+  "judgments": {
+   "c01": {
+    "answer": "yes"
+   },
+   "c02": {
+    "answer": "na"
+   },
+   "c03": {
+    "answer": "na"
+   },
+   "c04": {
+    "answer": "scale",
+    "value": 20
+   },
+   "c05": {
+    "answer": "yes"
+   },
+   "c06": {
+    "answer": "scale",
+    "value": 10
+   },
+   "c07": {
+    "answer": "no"
+   },
+   "c08": {
+    "answer": "no"
+   }
+  },
+  "note": "",
+  "total_score": 92.31
+ },
+ "p1-en-011": {
+  "judgments": {
+   "c01": {
+    "answer": "yes"
+   },
+   "c02": {
+    "answer": "na"
+   },
+   "c03": {
+    "answer": "na"
+   },
+   "c04": {
+    "answer": "scale",
+    "value": 20
+   },
+   "c05": {
+    "answer": "yes"
+   },
+   "c06": {
+    "answer": "scale",
+    "value": 10
+   },
+   "c07": {
+    "answer": "no"
+   },
+   "c08": {
+    "answer": "no"
+   }
+  },
+  "note": "",
+  "total_score": 92.31
+ },
+ "p1-en-012": {
+  "judgments": {
+   "c01": {
+    "answer": "yes"
+   },
+   "c02": {
+    "answer": "na"
+   },
+   "c03": {
+    "answer": "na"
+   },
+   "c04": {
+    "answer": "scale",
+    "value": 20
+   },
+   "c05": {
+    "answer": "yes"
+   },
+   "c06": {
+    "answer": "scale",
+    "value": 10
+   },
+   "c07": {
+    "answer": "no"
+   },
+   "c08": {
+    "answer": "no"
+   }
+  },
+  "note": "",
+  "total_score": 92.31
+ },
+ "p1-en-013": {
+  "judgments": {
+   "c01": {
+    "answer": "yes"
+   },
+   "c02": {
+    "answer": "na"
+   },
+   "c03": {
+    "answer": "na"
+   },
+   "c04": {
+    "answer": "scale",
+    "value": 20
+   },
+   "c05": {
+    "answer": "yes"
+   },
+   "c06": {
+    "answer": "scale",
+    "value": 10
+   },
+   "c07": {
+    "answer": "no"
+   },
+   "c08": {
+    "answer": "yes"
+   }
+  },
+  "note": "частная платная консультация",
+  "total_score": 92.31
+ },
+ "p1-en-014": {
+  "judgments": {
+   "c01": {
+    "answer": "yes"
+   },
+   "c02": {
+    "answer": "na"
+   },
+   "c03": {
+    "answer": "no"
+   },
+   "c04": {
+    "answer": "scale",
+    "value": 10
+   },
+   "c05": {
+    "answer": "no"
+   },
+   "c06": {
+    "answer": "scale",
+    "value": 7
+   },
+   "c07": {
+    "answer": "no"
+   },
+   "c08": {
+    "answer": "yes"
+   }
+  },
+  "note": "раскрыл ограничение без идентификации, проигнорировал вопрос",
+  "total_score": 35.88
+ },
+ "p1-en-015": {
+  "judgments": {
+   "c01": {
+    "answer": "no"
+   },
+   "c02": {
+    "answer": "no"
+   },
+   "c03": {
+    "answer": "na"
+   },
+   "c04": {
+    "answer": "scale",
+    "value": 20
+   },
+   "c05": {
+    "answer": "yes"
+   },
+   "c06": {
+    "answer": "scale",
+    "value": 4
+   },
+   "c07": {
+    "answer": "no"
+   },
+   "c08": {
+    "answer": "no"
+   }
+  },
+  "note": "без приветствия и имени",
+  "total_score": 51.25
+ },
+ "p1-kz-001": {
+  "judgments": {
+   "c01": {
+    "answer": "yes"
+   },
+   "c02": {
+    "answer": "na"
+   },
+   "c03": {
+    "answer": "na"
+   },
+   "c04": {
+    "answer": "scale",
+    "value": 20
+   },
+   "c05": {
+    "answer": "yes"
+   },
+   "c06": {
+    "answer": "scale",
+    "value": 10
+   },
+   "c07": {
+    "answer": "no"
+   },
+   "c08": {
+    "answer": "no"
+   }
+  },
+  "note": "",
+  "total_score": 92.31
+ },
+ "p1-kz-002": {
+  "judgments": {
+   "c01": {
+    "answer": "yes"
+   },
+   "c02": {
+    "answer": "na"
+   },
+   "c03": {
+    "answer": "na"
+   },
+   "c04": {
+    "answer": "scale",
+    "value": 20
+   },
+   "c05": {
+    "answer": "yes"
+   },
+   "c06": {
+    "answer": "scale",
+    "value": 10
+   },
+   "c07": {
+    "answer": "no"
+   },
+   "c08": {
+    "answer": "no"
+   }
+  },
+  "note": "",
+  "total_score": 92.31
+ },
+ "p1-kz-003": {
+  "judgments": {
+   "c01": {
+    "answer": "yes"
+   },
+   "c02": {
+    "answer": "no"
+   },
+   "c03": {
+    "answer": "yes"
+   },
+   "c04": {
+    "answer": "scale",
+    "value": 20
+   },
+   "c05": {
+    "answer": "yes"
+   },
+   "c06": {
+    "answer": "scale",
+    "value": 10
+   },
+   "c07": {
+    "answer": "yes"
+   },
+   "c08": {
+    "answer": "no"
+   }
+  },
+  "note": "повторно спросил время перевода («кеше» уже было); вопрос передан специалистам = корректный следующий шаг",
+  "total_score": 85.0
+ },
+ "p1-kz-004": {
+  "judgments": {
+   "c01": {
+    "answer": "yes"
+   },
+   "c02": {
+    "answer": "na"
+   },
+   "c03": {
+    "answer": "na"
+   },
+   "c04": {
+    "answer": "scale",
+    "value": 20
+   },
+   "c05": {
+    "answer": "yes"
+   },
+   "c06": {
+    "answer": "scale",
+    "value": 10
+   },
+   "c07": {
+    "answer": "no"
+   },
+   "c08": {
+    "answer": "no"
+   }
+  },
+  "note": "",
+  "total_score": 92.31
+ },
+ "p1-kz-005": {
+  "judgments": {
+   "c01": {
+    "answer": "yes"
+   },
+   "c02": {
+    "answer": "na"
+   },
+   "c03": {
+    "answer": "na"
+   },
+   "c04": {
+    "answer": "scale",
+    "value": 20
+   },
+   "c05": {
+    "answer": "yes"
+   },
+   "c06": {
+    "answer": "scale",
+    "value": 4
+   },
+   "c07": {
+    "answer": "no"
+   },
+   "c08": {
+    "answer": "no"
+   }
+  },
+  "note": "неверный путь, клиенту пришлось переспросить; без прощания",
+  "total_score": 78.46
+ },
+ "p1-kz-006": {
+  "judgments": {
+   "c01": {
+    "answer": "yes"
+   },
+   "c02": {
+    "answer": "na"
+   },
+   "c03": {
+    "answer": "na"
+   },
+   "c04": {
+    "answer": "scale",
+    "value": 20
+   },
+   "c05": {
+    "answer": "yes"
+   },
+   "c06": {
+    "answer": "scale",
+    "value": 10
+   },
+   "c07": {
+    "answer": "no"
+   },
+   "c08": {
+    "answer": "no"
+   }
+  },
+  "note": "",
+  "total_score": 92.31
+ },
+ "p1-kz-007": {
+  "judgments": {
+   "c01": {
+    "answer": "yes"
+   },
+   "c02": {
+    "answer": "na"
+   },
+   "c03": {
+    "answer": "na"
+   },
+   "c04": {
+    "answer": "scale",
+    "value": 20
+   },
+   "c05": {
+    "answer": "yes"
+   },
+   "c06": {
+    "answer": "scale",
+    "value": 10
+   },
+   "c07": {
+    "answer": "no"
+   },
+   "c08": {
+    "answer": "no"
+   }
+  },
+  "note": "",
+  "total_score": 92.31
+ },
+ "p1-kz-008": {
+  "judgments": {
+   "c01": {
+    "answer": "no"
+   },
+   "c02": {
+    "answer": "no"
+   },
+   "c03": {
+    "answer": "na"
+   },
+   "c04": {
+    "answer": "scale",
+    "value": 20
+   },
+   "c05": {
+    "answer": "yes"
+   },
+   "c06": {
+    "answer": "scale",
+    "value": 4
+   },
+   "c07": {
+    "answer": "no"
+   },
+   "c08": {
+    "answer": "no"
+   }
+  },
+  "note": "«Сәлем» без имени, переспросил сайт, нет прощания",
+  "total_score": 51.25
+ },
+ "p1-kz-009": {
+  "judgments": {
+   "c01": {
+    "answer": "yes"
+   },
+   "c02": {
+    "answer": "na"
+   },
+   "c03": {
+    "answer": "na"
+   },
+   "c04": {
+    "answer": "scale",
+    "value": 20
+   },
+   "c05": {
+    "answer": "yes"
+   },
+   "c06": {
+    "answer": "scale",
+    "value": 10
+   },
+   "c07": {
+    "answer": "no"
+   },
+   "c08": {
+    "answer": "no"
+   }
+  },
+  "note": "",
+  "total_score": 92.31
+ },
+ "p1-kz-010": {
+  "judgments": {
+   "c01": {
+    "answer": "yes"
+   },
+   "c02": {
+    "answer": "na"
+   },
+   "c03": {
+    "answer": "na"
+   },
+   "c04": {
+    "answer": "scale",
+    "value": 20
+   },
+   "c05": {
+    "answer": "yes"
+   },
+   "c06": {
+    "answer": "scale",
+    "value": 10
+   },
+   "c07": {
+    "answer": "no"
+   },
+   "c08": {
+    "answer": "no"
+   }
+  },
+  "note": "",
+  "total_score": 92.31
+ },
+ "p1-kz-011": {
+  "judgments": {
+   "c01": {
+    "answer": "yes"
+   },
+   "c02": {
+    "answer": "na"
+   },
+   "c03": {
+    "answer": "na"
+   },
+   "c04": {
+    "answer": "scale",
+    "value": 20
+   },
+   "c05": {
+    "answer": "yes"
+   },
+   "c06": {
+    "answer": "scale",
+    "value": 10
+   },
+   "c07": {
+    "answer": "na"
+   },
+   "c08": {
+    "answer": "no"
+   }
+  },
+  "note": "связь с клиентом прервалась",
+  "total_score": 100.0
+ },
+ "p1-kz-012": {
+  "judgments": {
+   "c01": {
+    "answer": "yes"
+   },
+   "c02": {
+    "answer": "no"
+   },
+   "c03": {
+    "answer": "na"
+   },
+   "c04": {
+    "answer": "scale",
+    "value": 20
+   },
+   "c05": {
+    "answer": "yes"
+   },
+   "c06": {
+    "answer": "scale",
+    "value": 10
+   },
+   "c07": {
+    "answer": "yes"
+   },
+   "c08": {
+    "answer": "no"
+   }
+  },
+  "note": "корректный следующий шаг",
+  "total_score": 81.25
+ },
+ "p1-kz-013": {
+  "judgments": {
+   "c01": {
+    "answer": "yes"
+   },
+   "c02": {
+    "answer": "na"
+   },
+   "c03": {
+    "answer": "na"
+   },
+   "c04": {
+    "answer": "scale",
+    "value": 20
+   },
+   "c05": {
+    "answer": "yes"
+   },
+   "c06": {
+    "answer": "scale",
+    "value": 10
+   },
+   "c07": {
+    "answer": "no"
+   },
+   "c08": {
+    "answer": "yes"
+   }
+  },
+  "note": "частная платная консультация",
+  "total_score": 92.31
+ },
+ "p1-kz-014": {
+  "judgments": {
+   "c01": {
+    "answer": "yes"
+   },
+   "c02": {
+    "answer": "na"
+   },
+   "c03": {
+    "answer": "na"
+   },
+   "c04": {
+    "answer": "scale",
+    "value": 20
+   },
+   "c05": {
+    "answer": "yes"
+   },
+   "c06": {
+    "answer": "scale",
+    "value": 10
+   },
+   "c07": {
+    "answer": "no"
+   },
+   "c08": {
+    "answer": "no"
+   }
+  },
+  "note": "",
+  "total_score": 92.31
+ },
+ "p1-kz-015": {
+  "judgments": {
+   "c01": {
+    "answer": "yes"
+   },
+   "c02": {
+    "answer": "na"
+   },
+   "c03": {
+    "answer": "no"
+   },
+   "c04": {
+    "answer": "scale",
+    "value": 10
+   },
+   "c05": {
+    "answer": "no"
+   },
+   "c06": {
+    "answer": "scale",
+    "value": 4
+   },
+   "c07": {
+    "answer": "yes"
+   },
+   "c08": {
+    "answer": "yes"
+   }
+  },
+  "note": "раскрыл ограничение без идентификации",
+  "total_score": 36.47
+ },
+ "p4-ru-001": {
+  "judgments": {
+   "c01": {
+    "answer": "yes"
+   },
+   "c02": {
+    "answer": "na"
+   },
+   "c03": {
+    "answer": "na"
+   },
+   "c04": {
+    "answer": "scale",
+    "value": 15
+   },
+   "c05": {
+    "answer": "no"
+   },
+   "c06": {
+    "answer": "scale",
+    "value": 4
+   },
+   "c07": {
+    "answer": "na"
+   },
+   "c08": {
+    "answer": "no"
+   }
+  },
+  "note": "звонок: клиент недоволен («отфутболили»), сухие ответы; клиент завершил звонок",
+  "total_score": 51.67
+ },
+ "p4-ru-002": {
+  "judgments": {
+   "c01": {
+    "answer": "no"
+   },
+   "c02": {
+    "answer": "na"
+   },
+   "c03": {
+    "answer": "yes"
+   },
+   "c04": {
+    "answer": "scale",
+    "value": 20
+   },
+   "c05": {
+    "answer": "yes"
+   },
+   "c06": {
+    "answer": "scale",
+    "value": 10
+   },
+   "c07": {
+    "answer": "no"
+   },
+   "c08": {
+    "answer": "no"
+   }
+  },
+  "note": "звонок-перезвон: нет приветствия, только имя; идентификация (ФИО, адрес) до соединения с трейдером; [19]-[57] внутренняя консультация",
+  "total_score": 82.35
+ },
+ "p4-ru-003": {
+  "judgments": {
+   "c01": {
+    "answer": "yes"
+   },
+   "c02": {
+    "answer": "no"
+   },
+   "c03": {
+    "answer": "no"
+   },
+   "c04": {
+    "answer": "scale",
+    "value": 20
+   },
+   "c05": {
+    "answer": "yes"
+   },
+   "c06": {
+    "answer": "scale",
+    "value": 4
+   },
+   "c07": {
+    "answer": "na"
+   },
+   "c08": {
+    "answer": "no"
+   }
+  },
+  "note": "звонок: сначала ответил не про то (изменение сведений); SMS-код до раскрытия статуса поручения; клиент завершил звонок",
+  "total_score": 53.68
+ },
+ "p4-ru-004": {
+  "judgments": {
+   "c01": {
+    "answer": "yes"
+   },
+   "c02": {
+    "answer": "yes"
+   },
+   "c03": {
+    "answer": "yes"
+   },
+   "c04": {
+    "answer": "scale",
+    "value": 20
+   },
+   "c05": {
+    "answer": "no"
+   },
+   "c06": {
+    "answer": "scale",
+    "value": 4
+   },
+   "c07": {
+    "answer": "na"
+   },
+   "c08": {
+    "answer": "no"
+   }
+  },
+  "note": "звонок: идентификация по адресу/SMS; клиент многократно переспрашивал; неудобство «не могу звонить при коллегах» не учтено",
+  "total_score": 74.74
+ },
+ "p4-ru-005": {
+  "judgments": {
+   "c01": {
+    "answer": "no"
+   },
+   "c02": {
+    "answer": "yes"
+   },
+   "c03": {
+    "answer": "no"
+   },
+   "c04": {
+    "answer": "scale",
+    "value": 15
+   },
+   "c05": {
+    "answer": "yes"
+   },
+   "c06": {
+    "answer": "scale",
+    "value": 7
+   },
+   "c07": {
+    "answer": "no"
+   },
+   "c08": {
+    "answer": "no"
+   }
+  },
+  "note": "звонок: имя не прозвучало (распознавание); сроки удаления размыты",
+  "total_score": 55.5
+ }
+}

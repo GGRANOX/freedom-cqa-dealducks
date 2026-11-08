@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CQA · Freedom Broker</title>
+  <link rel="icon" href="/assets/icons/brilliant.png">
+  <link rel="stylesheet" href="/static/css/app.css">
+  <script>
+    // Базовый URL бэкенда. Для встраивания в Dynamics 365 задайте window.CQA_API_BASE до загрузки скриптов.
+    window.CQA_API_BASE = window.CQA_API_BASE || "";
+    try { const t = localStorage.getItem("cqa.theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+  <script type="module" src="/static/js/app.js"></script>
+</head>
+<body>
+  <cqa-app></cqa-app>
+</body>
+</html>

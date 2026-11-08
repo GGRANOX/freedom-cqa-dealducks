@@ -1,0 +1,28 @@
+// Небольшой набор линейных иконок в духе SF Symbols (stroke = currentColor).
+const s = (d, extra = "") => `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ${extra}>${d}</svg>`;
+export const I = {
+  list: s('<path d="M8 6h12M8 12h12M8 18h12"/><circle cx="4" cy="6" r=".8" fill="currentColor"/><circle cx="4" cy="12" r=".8" fill="currentColor"/><circle cx="4" cy="18" r=".8" fill="currentColor"/>'),
+  scale: s('<path d="M12 3v18M5 21h14M6 7h12M6 7l-3 7a3 3 0 0 0 6 0L6 7zM18 7l-3 7a3 3 0 0 0 6 0l-3-7z"/>'),
+  checklist: s('<path d="M9 6h11M9 12h11M9 18h11"/><path d="M3.5 6l1.2 1.2L7 5M3.5 12l1.2 1.2L7 11M3.5 18l1.2 1.2L7 17"/>'),
+  sun: s('<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>'),
+  moon: s('<path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/>'),
+  play: s('<path d="M7 4.5v15l12-7.5-12-7.5z" fill="currentColor"/>', 'stroke-width="1"'),
+  pause: s('<path d="M8 5v14M16 5v14"/>', 'stroke-width="3.2"'),
+  chevron: s('<path d="M9 5l7 7-7 7"/>', 'class="chev"'),
+  back: s('<path d="M15 5l-7 7 7 7"/>'),
+  search: s('<circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/>'),
+  refresh: s('<path d="M20 11a8 8 0 1 0-2.3 5.7M20 4v7h-7"/>'),
+  upload: s('<path d="M12 16V4M7 9l5-5 5 5M4 20h16"/>'),
+  download: s('<path d="M12 4v12M7 11l5 5 5-5M4 20h16"/>'),
+  bolt: s('<path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z" fill="currentColor"/>', 'stroke-width="1"'),
+  sparkle: s('<path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8L12 3z"/>'),
+  flask: s('<path d="M9 3h6M10 3v6L4.5 18.5A2 2 0 0 0 6.2 21h11.6a2 2 0 0 0 1.7-2.5L14 9V3"/><path d="M7 15h10"/>'),
+  plus: s('<path d="M12 5v14M5 12h14"/>'),
+  x: s('<path d="M6 6l12 12M18 6L6 18"/>'),
+  phone: s('<path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 0-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/>'),
+  bubble: s('<path d="M20 12a8 8 0 0 1-11.6 7.1L4 20l1-4A8 8 0 1 1 20 12z"/>'),
+  warn: s('<path d="M12 3l10 18H2L12 3z"/><path d="M12 10v4M12 17.5v.5"/>'),
+  check: s('<path d="M5 12.5l4.5 4.5L19 7"/>'),
+  robot: s('<rect x="4" y="7" width="16" height="12" rx="3"/><path d="M12 3v4M9 12v1M15 12v1M9 16h6"/>'),
+  save: s('<path d="M5 4h11l3 3v13H5z"/><path d="M8 4v5h7V4M8 20v-6h8v6"/>'),
+};

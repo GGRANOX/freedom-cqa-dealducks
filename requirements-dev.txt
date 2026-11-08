@@ -1,0 +1,1 @@
+playwright>=1.40  # только для scripts/e2e_ui.py

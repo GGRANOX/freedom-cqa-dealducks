@@ -1,0 +1,16 @@
+.env
+.env.*
+gcp-key.json
+*.json.key
+.venv
+__pycache__
+*.pyc
+.pytest_cache
+.git
+data/*.db*
+data/dev.json
+data/out
+data/runs
+data/e2e
+data/organizers_api.txt
+tests
