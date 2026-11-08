@@ -1,0 +1,2684 @@
+{
+  "team": "DealDucks",
+  "dataset_group_id": "FBroker",
+  "generated_at": "2026-11-08T06:15:33+00:00",
+  "total_records": 10,
+  "results": [
+    {
+      "conversation_id": "p2-en-001",
+      "checklist_id": "freedom-chat-quality",
+      "checklist_version": 1,
+      "total_score": 82.5,
+      "gross_error": {
+        "flag": false,
+        "criterion_id": null,
+        "reason": ""
+      },
+      "sections": [
+        {
+          "id": "start",
+          "name": "Начало и понимание запроса",
+          "score": 31.25,
+          "max_score": 31.25
+        },
+        {
+          "id": "security",
+          "name": "Безопасность и решение",
+          "score": 25.0,
+          "max_score": 25.0
+        },
+        {
+          "id": "flow",
+          "name": "Ведение и завершение диалога",
+          "score": 26.25,
+          "max_score": 43.75
+        }
+      ],
+      "criteria": [
+        {
+          "criterion_id": "c01",
+          "name": "Установление контакта",
+          "answer": "yes",
+          "answer_label": "Да",
+          "value": null,
+          "score": 12.5,
+          "max_score": 12.5,
+          "weight": 10.0,
+          "effective_weight": 12.5,
+          "explanation": "Оператор в первом ответе поздоровался на языке клиента и представился по имени. Оба обязательных элемента присутствуют.",
+          "evidence": [
+            {
+              "message_index": 0,
+              "timestamp": "00:00",
+              "quote": "I can't find the sign-in button."
+            },
+            {
+              "message_index": 9,
+              "timestamp": "02:22",
+              "quote": "Hi, I'm Nora."
+            }
+          ],
+          "checked_range": null,
+          "na_reason": "",
+          "confidence": 1.0
+        },
+        {
+          "criterion_id": "c02",
+          "name": "Выявление потребности",
+          "answer": "yes",
+          "answer_label": "Да",
+          "value": null,
+          "score": 18.75,
+          "max_score": 18.75,
+          "weight": 15.0,
+          "effective_weight": 18.75,
+          "explanation": "Для правильного ответа не хватало адреса или названия сайта. Оператор задал уместный уточняющий вопрос, не повторяя уже сообщённые клиентом сведения.",
+          "evidence": [
+            {
+              "message_index": 4,
+              "timestamp": "00:30",
+              "quote": "Can you put me through to an agent? I have a few tabs open."
+            },
+            {
+              "message_index": 9,
+              "timestamp": "02:22",
+              "quote": "Which site are you on right now?"
+            },
+            {
+              "message_index": 10,
+              "timestamp": "02:41",
+              "quote": "The Freedom Finance Global company site."
+            }
+          ],
+          "checked_range": null,
+          "na_reason": "",
+          "confidence": 0.99
+        },
+        {
+          "criterion_id": "c03",
+          "name": "Идентификация",
+          "answer": "na",
+          "answer_label": "N/A",
+          "value": null,
+          "score": 0.0,
+          "max_score": 0.0,
+          "weight": 20.0,
+          "effective_weight": 0.0,
+          "explanation": "Оператор только указал сайт и приложение для входа. Это общая инструкция, для которой проверка личности не требуется.",
+          "evidence": [
+            {
+              "message_index": 13,
+              "timestamp": "04:11",
+              "quote": "The company site is informational. Open tradernet.global to sign in on the web, or use the Freedom Broker app."
+            }
+          ],
+          "checked_range": null,
+          "na_reason": "Общая инструкция по входу на платформу без раскрытия данных или защищённых действий.",
+          "confidence": 1.0
+        },
+        {
+          "criterion_id": "c04",
+          "name": "Корректная и полная консультация",
+          "answer": "scale",
+          "answer_label": "20",
+          "value": 20,
+          "score": 25.0,
+          "max_score": 25.0,
+          "weight": 20.0,
+          "effective_weight": 25.0,
+          "explanation": "Оператор объяснил назначение сайта компании и дал конкретный следующий шаг для входа. Клиент подтвердил успешное решение проблемы.",
+          "evidence": [
+            {
+              "message_index": 13,
+              "timestamp": "04:11",
+              "quote": "The company site is informational. Open tradernet.global to sign in on the web, or use the Freedom Broker app."
+            },
+            {
+              "message_index": 14,
+              "timestamp": "04:37",
+              "quote": "That worked. Thanks."
+            }
+          ],
+          "checked_range": null,
+          "na_reason": "",
+          "confidence": 0.99
+        },
+        {
+          "criterion_id": "c05",
+          "name": "Эмпатия и клиентоориентированность",
+          "answer": "yes",
+          "answer_label": "Да",
+          "value": null,
+          "score": 18.75,
+          "max_score": 18.75,
+          "weight": 15.0,
+          "effective_weight": 18.75,
+          "explanation": "Оператор сохранял вежливость и помог с конкретным неудобством — невозможностью найти вход. После неясной инструкции он извинился и предоставил точный адрес и альтернативный способ входа.",
+          "evidence": [
+            {
+              "message_index": 0,
+              "timestamp": "00:00",
+              "quote": "I can't find the sign-in button."
+            },
+            {
+              "message_index": 13,
+              "timestamp": "04:11",
+              "quote": "Sorry, let me be specific. The company site is informational. Open tradernet.global to sign in on the web, or use the Freedom Broker app."
+            },
+            {
+              "message_index": 15,
+              "timestamp": "05:16",
+              "quote": "Glad you got in. Have a good day!"
+            }
+          ],
+          "checked_range": null,
+          "na_reason": "",
+          "confidence": 0.98
+        },
+        {
+          "criterion_id": "c06",
+          "name": "Управление диалогом, скорость и грамотность",
+          "answer": "scale",
+          "answer_label": "4",
+          "value": 4,
+          "score": 7.5,
+          "max_score": 18.75,
+          "weight": 15.0,
+          "effective_weight": 18.75,
+          "explanation": "Клиенту пришлось переспросить из-за неопределённой инструкции оператора перейти на другой сайт без указания адреса. Это соответствует ступени 4, хотя затем оператор уточнил ответ и клиент успешно вошёл.",
+          "evidence": [
+            {
+              "message_index": 11,
+              "timestamp": "03:13",
+              "quote": "Go to the other one, not the one you're on. You can use it there."
+            },
+            {
+              "message_index": 12,
+              "timestamp": "03:58",
+              "quote": "Which other one? What address should I open?"
+            },
+            {
+              "message_index": 13,
+              "timestamp": "04:11",
+              "quote": "Open tradernet.global to sign in on the web, or use the Freedom Broker app."
+            }
+          ],
+          "checked_range": null,
+          "na_reason": "",
+          "confidence": 1.0
+        },
+        {
+          "criterion_id": "c07",
+          "name": "Завершение",
+          "answer": "no",
+          "answer_label": "Нет",
+          "value": null,
+          "score": 0.0,
+          "max_score": 6.25,
+          "weight": 5.0,
+          "effective_weight": 6.25,
+          "explanation": "Заключительная реплика «Glad you got in. Have a good day!» прямо отнесена правилами к недостаточным вежливым формулам. Итог или предложение дальнейшей помощи в ней отсутствуют.",
+          "evidence": [
+            {
+              "message_index": 15,
+              "timestamp": "05:16",
+              "quote": "Glad you got in. Have a good day!"
+            }
+          ],
+          "checked_range": {
+            "from_index": 15,
+            "to_index": 15
+          },
+          "na_reason": "",
+          "confidence": 1.0
+        },
+        {
+          "criterion_id": "c08",
+          "name": "Грубые ошибки",
+          "answer": "no",
+          "answer_label": "Нет",
+          "value": null,
+          "score": 0.0,
+          "max_score": 0.0,
+          "weight": 0.0,
+          "effective_weight": 0.0,
+          "explanation": "Ни одно из трёх нарушений не выявлено: оператор уточнил сайт и предоставил публичный адрес для входа, не раскрывая конфиденциальных данных.",
+          "evidence": [
+            {
+              "message_index": 13,
+              "timestamp": "04:11",
+              "quote": "Sorry, let me be specific. The company site is informational. Open tradernet.global to sign in on the web, or use the Freedom Broker app."
+            }
+          ],
+          "checked_range": {
+            "from_index": 9,
+            "to_index": 15
+          },
+          "na_reason": "",
+          "confidence": 1.0
+        }
+      ],
+      "model": "gemini-3.8-flash, gpt-6.1-sol",
+      "cost_usd": 0.04514,
+      "evaluated_at": "2026-11-08T06:15:10+00:00"
+    },
+    {
+      "conversation_id": "p2-en-002",
+      "checklist_id": "freedom-chat-quality",
+      "checklist_version": 1,
+      "total_score": 100.0,
+      "gross_error": {
+        "flag": false,
+        "criterion_id": null,
+        "reason": ""
+      },
+      "sections": [
+        {
+          "id": "start",
+          "name": "Начало и понимание запроса",
+          "score": 15.38,
+          "max_score": 15.38
+        },
+        {
+          "id": "security",
+          "name": "Безопасность и решение",
+          "score": 30.77,
+          "max_score": 30.77
+        },
+        {
+          "id": "flow",
+          "name": "Ведение и завершение диалога",
+          "score": 53.85,
+          "max_score": 53.85
+        }
+      ],
+      "criteria": [
+        {
+          "criterion_id": "c01",
+          "name": "Установление контакта",
+          "answer": "yes",
+          "answer_label": "Да",
+          "value": null,
+          "score": 15.38,
+          "max_score": 15.38,
+          "weight": 10.0,
+          "effective_weight": 15.38,
+          "explanation": "Оператор в первом ответе поздоровался на языке клиента и представился по имени: «Hi, I'm Jordan.»",
+          "evidence": [
+            {
+              "message_index": 0,
+              "timestamp": "00:00",
+              "quote": "I’m in the mobile app."
+            },
+            {
+              "message_index": 9,
+              "timestamp": "02:34",
+              "quote": "Hi, I'm Jordan."
+            }
+          ],
+          "checked_range": null,
+          "na_reason": "",
+          "confidence": 1.0
+        },
+        {
+          "criterion_id": "c02",
+          "name": "Выявление потребности",
+          "answer": "na",
+          "answer_label": "N/A",
+          "value": null,
+          "score": 0.0,
+          "max_score": 0.0,
+          "weight": 15.0,
+          "effective_weight": 0.0,
+          "explanation": "Данных для ответа хватало с самого начала: были известны платформа, нужный документ, период и затруднение с поиском меню. Оператор ответил по существу, не переспрашивая уже сообщённое.",
+          "evidence": [
+            {
+              "message_index": 0,
+              "timestamp": "00:00",
+              "quote": "I’m in the mobile app. I need last year’s broker report and want to see where the pricing plan is printed in it."
+            },
+            {
+              "message_index": 4,
+              "timestamp": "00:34",
+              "quote": "I can't find the report menu."
+            },
+            {
+              "message_index": 9,
+              "timestamp": "02:34",
+              "quote": "In the app, open Menu, then Reports and Documents, then Broker Report. Select last year's dates and download the report."
+            }
+          ],
+          "checked_range": null,
+          "na_reason": "Запрос был понятен до подключения оператора; недостающих для ответа данных не было.",
+          "confidence": 0.99
+        },
+        {
+          "criterion_id": "c03",
+          "name": "Идентификация",
+          "answer": "na",
+          "answer_label": "N/A",
+          "value": null,
+          "score": 0.0,
+          "max_score": 0.0,
+          "weight": 20.0,
+          "effective_weight": 0.0,
+          "explanation": "Консультация ограничилась общей навигацией в приложении и расположением информации в отчёте. Оператор не раскрывал данные конкретного счёта и не совершал защищённых действий.",
+          "evidence": [
+            {
+              "message_index": 9,
+              "timestamp": "02:34",
+              "quote": "In the app, open Menu, then Reports and Documents, then Broker Report. Select last year's dates and download the report."
+            },
+            {
+              "message_index": 13,
+              "timestamp": "04:22",
+              "quote": "The current plan is under your name."
+            },
+            {
+              "message_index": 18,
+              "timestamp": "06:57",
+              "quote": "You can go back to Broker Report and generate it again if you're unsure which file you opened."
+            }
+          ],
+          "checked_range": null,
+          "na_reason": "Общие инструкции по самостоятельному поиску отчёта и тарифного плана не требуют идентификации.",
+          "confidence": 0.99
+        },
+        {
+          "criterion_id": "c04",
+          "name": "Корректная и полная консультация",
+          "answer": "scale",
+          "answer_label": "20",
+          "value": 20,
+          "score": 30.77,
+          "max_score": 30.77,
+          "weight": 20.0,
+          "effective_weight": 30.77,
+          "explanation": "Все существенные вопросы клиента закрыты: даны инструкции по получению отчёта, поиску тарифа и просмотру текущего плана в веб-версии. В конце клиент подтвердил, что нашёл правильный файл.",
+          "evidence": [
+            {
+              "message_index": 9,
+              "timestamp": "02:34",
+              "quote": "In the app, open Menu, then Reports and Documents, then Broker Report. Select last year's dates and download the report."
+            },
+            {
+              "message_index": 11,
+              "timestamp": "03:47",
+              "quote": "Look in Account Information on the first page. That's where the pricing plan is listed."
+            },
+            {
+              "message_index": 13,
+              "timestamp": "04:22",
+              "quote": "In the web version, open the account area, labelled «Кабинет» in the Russian interface. The current plan is under your name."
+            },
+            {
+              "message_index": 18,
+              "timestamp": "06:57",
+              "quote": "Use the one for the dates you selected for last year. You can go back to Broker Report and generate it again if you're unsure which file you opened."
+            },
+            {
+              "message_index": 19,
+              "timestamp": "07:24",
+              "quote": "Found it now. I was opening the wrong download."
+            }
+          ],
+          "checked_range": null,
+          "na_reason": "",
+          "confidence": 0.99
+        },
+        {
+          "criterion_id": "c05",
+          "name": "Эмпатия и клиентоориентированность",
+          "answer": "yes",
+          "answer_label": "Да",
+          "value": null,
+          "score": 23.08,
+          "max_score": 23.08,
+          "weight": 15.0,
+          "effective_weight": 23.08,
+          "explanation": "Грубости или пренебрежения в репликах оператора нет. Описанные клиентом затруднения не остались без реакции: оператор объяснил, где найти отчёт и как выбрать нужный файл.",
+          "evidence": [
+            {
+              "message_index": 4,
+              "timestamp": "00:34",
+              "quote": "I can't find the report menu."
+            },
+            {
+              "message_index": 9,
+              "timestamp": "02:34",
+              "quote": "In the app, open Menu, then Reports and Documents, then Broker Report."
+            },
+            {
+              "message_index": 18,
+              "timestamp": "06:57",
+              "quote": "You can go back to Broker Report and generate it again if you're unsure which file you opened."
+            },
+            {
+              "message_index": 20,
+              "timestamp": "07:39",
+              "quote": "You're welcome."
+            }
+          ],
+          "checked_range": null,
+          "na_reason": "",
+          "confidence": 0.99
+        },
+        {
+          "criterion_id": "c06",
+          "name": "Управление диалогом, скорость и грамотность",
+          "answer": "scale",
+          "answer_label": "10",
+          "value": 10,
+          "score": 23.08,
+          "max_score": 23.08,
+          "weight": 15.0,
+          "effective_weight": 23.08,
+          "explanation": "Оператор ясно объяснил, как скачать отчёт, найти в нём тариф и проверить текущий план. Сбоев ясности, порядка ответов и скорости первой реакции нет; предупреждение об ожидании не требовалось.",
+          "evidence": [
+            {
+              "message_index": 9,
+              "timestamp": "02:34",
+              "quote": "In the app, open Menu, then Reports and Documents, then Broker Report. Select last year's dates and download the report."
+            },
+            {
+              "message_index": 11,
+              "timestamp": "03:47",
+              "quote": "Look in Account Information on the first page. That's where the pricing plan is listed."
+            },
+            {
+              "message_index": 14,
+              "timestamp": "04:59",
+              "quote": "That answers both questions. Thank you."
+            },
+            {
+              "message_index": 19,
+              "timestamp": "07:24",
+              "quote": "Found it now. I was opening the wrong download."
+            }
+          ],
+          "checked_range": null,
+          "na_reason": "",
+          "confidence": 0.99
+        },
+        {
+          "criterion_id": "c07",
+          "name": "Завершение",
+          "answer": "yes",
+          "answer_label": "Да",
+          "value": null,
+          "score": 7.69,
+          "max_score": 7.69,
+          "weight": 5.0,
+          "effective_weight": 7.69,
+          "explanation": "Оператор в заключительной реплике подвёл итог: клиент получил отчёт и знает, где проверить текущий тарифный план, — и попрощался.",
+          "evidence": [
+            {
+              "message_index": 20,
+              "timestamp": "07:39",
+              "quote": "You have the report and know where to check the current plan. Goodbye!"
+            }
+          ],
+          "checked_range": null,
+          "na_reason": "",
+          "confidence": 1.0
+        },
+        {
+          "criterion_id": "c08",
+          "name": "Грубые ошибки",
+          "answer": "no",
+          "answer_label": "Нет",
+          "value": null,
+          "score": 0.0,
+          "max_score": 0.0,
+          "weight": 0.0,
+          "effective_weight": 0.0,
+          "explanation": "Грубых ошибок не выявлено: оператор давал общие инструкции по интерфейсу, не раскрывая данные счетов или других клиентов, не оскорбляя клиента и не предлагая частных платных услуг.",
+          "evidence": [
+            {
+              "message_index": 9,
+              "timestamp": "02:34",
+              "quote": "In the app, open Menu, then Reports and Documents, then Broker Report."
+            },
+            {
+              "message_index": 13,
+              "timestamp": "04:22",
+              "quote": "The current plan is under your name."
+            },
+            {
+              "message_index": 16,
+              "timestamp": "06:15",
+              "quote": "Check the document title. If it says Broker Report, you're in the right document."
+            }
+          ],
+          "checked_range": {
+            "from_index": 9,
+            "to_index": 20
+          },
+          "na_reason": "",
+          "confidence": 1.0
+        }
+      ],
+      "model": "gemini-3.8-flash, gpt-6.1-sol",
+      "cost_usd": 0.05229,
+      "evaluated_at": "2026-11-08T06:15:07+00:00"
+    },
+    {
+      "conversation_id": "p2-kz-001",
+      "checklist_id": "freedom-chat-quality",
+      "checklist_version": 1,
+      "total_score": 88.13,
+      "gross_error": {
+        "flag": false,
+        "criterion_id": null,
+        "reason": ""
+      },
+      "sections": [
+        {
+          "id": "start",
+          "name": "Начало и понимание запроса",
+          "score": 31.25,
+          "max_score": 31.25
+        },
+        {
+          "id": "security",
+          "name": "Безопасность и решение",
+          "score": 25.0,
+          "max_score": 25.0
+        },
+        {
+          "id": "flow",
+          "name": "Ведение и завершение диалога",
+          "score": 31.88,
+          "max_score": 43.75
+        }
+      ],
+      "criteria": [
+        {
+          "criterion_id": "c01",
+          "name": "Установление контакта",
+          "answer": "yes",
+          "answer_label": "Да",
+          "value": null,
+          "score": 12.5,
+          "max_score": 12.5,
+          "weight": 10.0,
+          "effective_weight": 12.5,
+          "explanation": "Оператор в первом ответе поздоровался на языке клиента и представился: «Сәлеметсіз бе! Менің атым Меруерт.» Оба условия критерия выполнены.",
+          "evidence": [
+            {
+              "message_index": 9,
+              "timestamp": "02:47",
+              "quote": "Сәлеметсіз бе! Менің атым Меруерт."
+            }
+          ],
+          "checked_range": null,
+          "na_reason": "",
+          "confidence": 1.0
+        },
+        {
+          "criterion_id": "c02",
+          "name": "Выявление потребности",
+          "answer": "yes",
+          "answer_label": "Да",
+          "value": null,
+          "score": 18.75,
+          "max_score": 18.75,
+          "weight": 15.0,
+          "effective_weight": 18.75,
+          "explanation": "Оператор учёл известную цель обращения и уточнил недостающую валюту перевода. Получив ответ, он объяснил, где скачать реквизиты для евро.",
+          "evidence": [
+            {
+              "message_index": 9,
+              "timestamp": "02:47",
+              "quote": "Қай валютамен аударғыңыз келеді?"
+            },
+            {
+              "message_index": 10,
+              "timestamp": "03:07",
+              "quote": "Еуромен."
+            },
+            {
+              "message_index": 12,
+              "timestamp": "05:32",
+              "quote": "Еуроны таңдап, деректемелерді жүктеп алыңыз."
+            }
+          ],
+          "checked_range": null,
+          "na_reason": "",
+          "confidence": 0.99
+        },
+        {
+          "criterion_id": "c03",
+          "name": "Идентификация",
+          "answer": "na",
+          "answer_label": "N/A",
+          "value": null,
+          "score": 0.0,
+          "max_score": 0.0,
+          "weight": 20.0,
+          "effective_weight": 0.0,
+          "explanation": "Запрос касался навигации в приложении для получения реквизитов. Оператор объяснил путь к нужному разделу, не раскрывая сведений о конкретном счёте.",
+          "evidence": [
+            {
+              "message_index": 12,
+              "timestamp": "05:32",
+              "quote": "Қосымшада «Меню → Пополнить → Перевод по реквизитам» деген жолмен өтіңіз. Еуроны таңдап, деректемелерді жүктеп алыңыз."
+            }
+          ],
+          "checked_range": null,
+          "na_reason": "Предоставлена общая инструкция в приложении; раскрытия данных и защищённых действий не было.",
+          "confidence": 0.99
+        },
+        {
+          "criterion_id": "c04",
+          "name": "Корректная и полная консультация",
+          "answer": "scale",
+          "answer_label": "20",
+          "value": 20,
+          "score": 25.0,
+          "max_score": 25.0,
+          "weight": 20.0,
+          "effective_weight": 25.0,
+          "explanation": "Запрос полностью закрыт: оператор дал конкретные инструкции для получения реквизитов перевода в евро. Клиент подтвердил, что нашёл нужные данные.",
+          "evidence": [
+            {
+              "message_index": 12,
+              "timestamp": "05:32",
+              "quote": "Қосымшада «Меню → Пополнить → Перевод по реквизитам» деген жолмен өтіңіз. Еуроны таңдап, деректемелерді жүктеп алыңыз. Банкке сол деректемелерді беріңіз."
+            },
+            {
+              "message_index": 13,
+              "timestamp": "05:46",
+              "quote": "Енді таптым. Рақмет!"
+            }
+          ],
+          "checked_range": null,
+          "na_reason": "",
+          "confidence": 0.99
+        },
+        {
+          "criterion_id": "c05",
+          "name": "Эмпатия и клиентоориентированность",
+          "answer": "yes",
+          "answer_label": "Да",
+          "value": null,
+          "score": 18.75,
+          "max_score": 18.75,
+          "weight": 15.0,
+          "effective_weight": 18.75,
+          "explanation": "Оператор сохраняла вежливый тон и отреагировала на конкретное затруднение клиента, объяснив, где скачать реквизиты. Клиент подтвердил, что нашёл их.",
+          "evidence": [
+            {
+              "message_index": 4,
+              "timestamp": "00:43",
+              "quote": "Қосымшада таба алмай тұрмын."
+            },
+            {
+              "message_index": 12,
+              "timestamp": "05:32",
+              "quote": "Қосымшада «Меню → Пополнить → Перевод по реквизитам» деген жолмен өтіңіз. Еуроны таңдап, деректемелерді жүктеп алыңыз."
+            },
+            {
+              "message_index": 13,
+              "timestamp": "05:46",
+              "quote": "Енді таптым. Рақмет!"
+            },
+            {
+              "message_index": 14,
+              "timestamp": "06:13",
+              "quote": "Көмегім тигеніне қуаныштымын. Сау болыңыз!"
+            }
+          ],
+          "checked_range": null,
+          "na_reason": "",
+          "confidence": 0.99
+        },
+        {
+          "criterion_id": "c06",
+          "name": "Управление диалогом, скорость и грамотность",
+          "answer": "scale",
+          "answer_label": "7",
+          "value": 7,
+          "score": 13.13,
+          "max_score": 18.75,
+          "weight": 15.0,
+          "effective_weight": 18.75,
+          "explanation": "Оператор понятно объяснил порядок действий, но не предупредил об ожидании на время проверки. Других сбоев ясности, порядка ответов или скорости первой реакции нет.",
+          "evidence": [
+            {
+              "message_index": 11,
+              "timestamp": "03:40",
+              "quote": "Оператор начал проверку."
+            },
+            {
+              "message_index": 12,
+              "timestamp": "05:32",
+              "quote": "Еуроны таңдап, деректемелерді жүктеп алыңыз. Банкке сол деректемелерді беріңіз."
+            },
+            {
+              "message_index": 13,
+              "timestamp": "05:46",
+              "quote": "Енді таптым. Рақмет!"
+            }
+          ],
+          "checked_range": {
+            "from_index": 9,
+            "to_index": 12
+          },
+          "na_reason": "",
+          "confidence": 0.97
+        },
+        {
+          "criterion_id": "c07",
+          "name": "Завершение",
+          "answer": "no",
+          "answer_label": "Нет",
+          "value": null,
+          "score": 0.0,
+          "max_score": 6.25,
+          "weight": 5.0,
+          "effective_weight": 6.25,
+          "explanation": "Заключительная реплика содержит только вежливую формулу и прощание, без фиксации результата или предложения дальнейшей помощи. Оператор ответил клиенту и мог полноценно завершить разговор, поэтому N/A неприменимо.",
+          "evidence": [
+            {
+              "message_index": 14,
+              "timestamp": "06:13",
+              "quote": "Көмегім тигеніне қуаныштымын. Сау болыңыз!"
+            }
+          ],
+          "checked_range": {
+            "from_index": 14,
+            "to_index": 14
+          },
+          "na_reason": "",
+          "confidence": 1.0
+        },
+        {
+          "criterion_id": "c08",
+          "name": "Грубые ошибки",
+          "answer": "no",
+          "answer_label": "Нет",
+          "value": null,
+          "score": 0.0,
+          "max_score": 0.0,
+          "weight": 0.0,
+          "effective_weight": 0.0,
+          "explanation": "Грубых ошибок не выявлено: оператор объяснил, как скачать реквизиты в приложении, не раскрывая конфиденциальных данных и не предлагая частных платных услуг.",
+          "evidence": [
+            {
+              "message_index": 12,
+              "timestamp": "05:32",
+              "quote": "Еуроны таңдап, деректемелерді жүктеп алыңыз. Банкке сол деректемелерді беріңіз."
+            },
+            {
+              "message_index": 14,
+              "timestamp": "06:13",
+              "quote": "Көмегім тигеніне қуаныштымын. Сау болыңыз!"
+            }
+          ],
+          "checked_range": {
+            "from_index": 9,
+            "to_index": 14
+          },
+          "na_reason": "",
+          "confidence": 1.0
+        }
+      ],
+      "model": "gemini-3.8-flash, gpt-6.1-sol",
+      "cost_usd": 0.04979,
+      "evaluated_at": "2026-11-08T06:15:11+00:00"
+    },
+    {
+      "conversation_id": "p2-kz-002",
+      "checklist_id": "freedom-chat-quality",
+      "checklist_version": 1,
+      "total_score": 16.0,
+      "gross_error": {
+        "flag": false,
+        "criterion_id": null,
+        "reason": ""
+      },
+      "sections": [
+        {
+          "id": "start",
+          "name": "Начало и понимание запроса",
+          "score": 10.0,
+          "max_score": 25.0
+        },
+        {
+          "id": "security",
+          "name": "Безопасность и решение",
+          "score": 0.0,
+          "max_score": 40.0
+        },
+        {
+          "id": "flow",
+          "name": "Ведение и завершение диалога",
+          "score": 6.0,
+          "max_score": 35.0
+        }
+      ],
+      "criteria": [
+        {
+          "criterion_id": "c01",
+          "name": "Установление контакта",
+          "answer": "yes",
+          "answer_label": "Да",
+          "value": null,
+          "score": 10.0,
+          "max_score": 10.0,
+          "weight": 10.0,
+          "effective_weight": 10.0,
+          "explanation": "Оператор в первом ответе поздоровался на языке клиента и представился по имени Асқар. Оба обязательных элемента присутствуют.",
+          "evidence": [
+            {
+              "message_index": 9,
+              "timestamp": "01:43",
+              "quote": "Сәлеметсіз бе, мен Асқармын."
+            }
+          ],
+          "checked_range": null,
+          "na_reason": "",
+          "confidence": 1.0
+        },
+        {
+          "criterion_id": "c02",
+          "name": "Выявление потребности",
+          "answer": "no",
+          "answer_label": "Нет",
+          "value": null,
+          "score": 0.0,
+          "max_score": 15.0,
+          "weight": 15.0,
+          "effective_weight": 15.0,
+          "explanation": "Данных для установления причины отклонения заявки не хватало. Оператор не уточнил детали заявки и ответил наугад, приравняв отклонение к исполнению.",
+          "evidence": [
+            {
+              "message_index": 4,
+              "timestamp": "00:50",
+              "quote": "Тек «отклонён» деп тұр."
+            },
+            {
+              "message_index": 9,
+              "timestamp": "01:43",
+              "quote": "Тикерді қараудың қажеті жоқ. Өтінім қабылданбаса, ол міндетті түрде орындалып қойған. Ештеңе тексермей-ақ қойыңыз."
+            }
+          ],
+          "checked_range": {
+            "from_index": 9,
+            "to_index": 11
+          },
+          "na_reason": "",
+          "confidence": 1.0
+        },
+        {
+          "criterion_id": "c03",
+          "name": "Идентификация",
+          "answer": "no",
+          "answer_label": "Нет",
+          "value": null,
+          "score": 0.0,
+          "max_score": 20.0,
+          "weight": 20.0,
+          "effective_weight": 20.0,
+          "explanation": "Оператор заявил, что заявка клиента уже исполнена, без подтверждённой идентификации. Сведения о конкретной операции требуют предварительной проверки личности.",
+          "evidence": [
+            {
+              "message_index": 9,
+              "timestamp": "01:43",
+              "quote": "Өтінім қабылданбаса, ол міндетті түрде орындалып қойған."
+            }
+          ],
+          "checked_range": {
+            "from_index": 0,
+            "to_index": 9
+          },
+          "na_reason": "",
+          "confidence": 0.7
+        },
+        {
+          "criterion_id": "c04",
+          "name": "Корректная и полная консультация",
+          "answer": "scale",
+          "answer_label": "0",
+          "value": 0,
+          "score": 0.0,
+          "max_score": 20.0,
+          "weight": 20.0,
+          "effective_weight": 20.0,
+          "explanation": "Ключевая рекомендация неверна: отклонение заявки не означает её исполнение. Причина отказа не выяснена, а уточняющий вопрос клиента остался без ответа.",
+          "evidence": [
+            {
+              "message_index": 9,
+              "timestamp": "01:43",
+              "quote": "Өтінім қабылданбаса, ол міндетті түрде орындалып қойған. Ештеңе тексермей-ақ қойыңыз."
+            },
+            {
+              "message_index": 10,
+              "timestamp": "02:14",
+              "quote": "Қабылданбаған өтінім орындалды дегеніңіз қалай?"
+            },
+            {
+              "message_index": 11,
+              "timestamp": "02:58",
+              "quote": "Оператор чатты жапты."
+            }
+          ],
+          "checked_range": {
+            "from_index": 9,
+            "to_index": 11
+          },
+          "na_reason": "",
+          "confidence": 1.0
+        },
+        {
+          "criterion_id": "c05",
+          "name": "Эмпатия и клиентоориентированность",
+          "answer": "no",
+          "answer_label": "Нет",
+          "value": null,
+          "score": 0.0,
+          "max_score": 15.0,
+          "weight": 15.0,
+          "effective_weight": 15.0,
+          "explanation": "Клиент описал неудобство: заявка неоднократно отклоняется, а причина непонятна. Оператор формально поздоровался, но не признал затруднение и не предложил вариант помощи, ограничившись указанием ничего не проверять.",
+          "evidence": [
+            {
+              "message_index": 0,
+              "timestamp": "00:00",
+              "quote": "Облигация алайын десем, өтінім қайта-қайта қабылданбайды. Неге екенін түсінбедім."
+            },
+            {
+              "message_index": 9,
+              "timestamp": "01:43",
+              "quote": "Тикерді қараудың қажеті жоқ."
+            },
+            {
+              "message_index": 9,
+              "timestamp": "01:43",
+              "quote": "Ештеңе тексермей-ақ қойыңыз."
+            }
+          ],
+          "checked_range": {
+            "from_index": 9,
+            "to_index": 11
+          },
+          "na_reason": "",
+          "confidence": 0.94
+        },
+        {
+          "criterion_id": "c06",
+          "name": "Управление диалогом, скорость и грамотность",
+          "answer": "scale",
+          "answer_label": "4",
+          "value": 4,
+          "score": 6.0,
+          "max_score": 15.0,
+          "weight": 15.0,
+          "effective_weight": 15.0,
+          "explanation": "Противоречивая формулировка оператора о статусе заявки вынудила клиента переспросить. Порог первой реакции не нарушен.",
+          "evidence": [
+            {
+              "message_index": 9,
+              "timestamp": "01:43",
+              "quote": "Өтінім қабылданбаса, ол міндетті түрде орындалып қойған."
+            },
+            {
+              "message_index": 10,
+              "timestamp": "02:14",
+              "quote": "Қабылданбаған өтінім орындалды дегеніңіз қалай?"
+            }
+          ],
+          "checked_range": null,
+          "na_reason": "",
+          "confidence": 0.99
+        },
+        {
+          "criterion_id": "c07",
+          "name": "Завершение",
+          "answer": "no",
+          "answer_label": "Нет",
+          "value": null,
+          "score": 0.0,
+          "max_score": 5.0,
+          "weight": 5.0,
+          "effective_weight": 5.0,
+          "explanation": "Оператор закрыл чат без прощания. N/A неприменимо: завершение произошло по инициативе оператора, а не вследствие обрыва связи или ухода клиента.",
+          "evidence": [
+            {
+              "message_index": 9,
+              "timestamp": "01:43",
+              "quote": "Ештеңе тексермей-ақ қойыңыз."
+            },
+            {
+              "message_index": 11,
+              "timestamp": "02:58",
+              "quote": "Оператор чатты жапты."
+            }
+          ],
+          "checked_range": {
+            "from_index": 9,
+            "to_index": 11
+          },
+          "na_reason": "",
+          "confidence": 1.0
+        },
+        {
+          "criterion_id": "c08",
+          "name": "Грубые ошибки",
+          "answer": "no",
+          "answer_label": "Нет",
+          "value": null,
+          "score": 0.0,
+          "max_score": 0.0,
+          "weight": 0.0,
+          "effective_weight": 0.0,
+          "explanation": "Грубая ошибка по критерию c08 не выявлена. Оператор дал некорректное объяснение статуса заявки, но это не является ни оскорблением, ни предложением частной платной услуги, ни раскрытием конфиденциальной информации.",
+          "evidence": [
+            {
+              "message_index": 9,
+              "timestamp": "01:43",
+              "quote": "Өтінім қабылданбаса, ол міндетті түрде орындалып қойған. Ештеңе тексермей-ақ қойыңыз."
+            }
+          ],
+          "checked_range": null,
+          "na_reason": "",
+          "confidence": 0.99
+        }
+      ],
+      "model": "gemini-3.8-flash, gpt-6.1-sol",
+      "cost_usd": 0.07196,
+      "evaluated_at": "2026-11-08T06:15:15+00:00"
+    },
+    {
+      "conversation_id": "p2-kz-003",
+      "checklist_id": "freedom-chat-quality",
+      "checklist_version": 1,
+      "total_score": 100.0,
+      "gross_error": {
+        "flag": true,
+        "criterion_id": "c08",
+        "reason": "Выявлена грубая ошибка: оператор предложил клиенту лично перевести ему деньги для инвестирования в обход компании. Отказ клиента не отменяет нарушения."
+      },
+      "sections": [
+        {
+          "id": "start",
+          "name": "Начало и понимание запроса",
+          "score": 15.38,
+          "max_score": 15.38
+        },
+        {
+          "id": "security",
+          "name": "Безопасность и решение",
+          "score": 30.77,
+          "max_score": 30.77
+        },
+        {
+          "id": "flow",
+          "name": "Ведение и завершение диалога",
+          "score": 53.85,
+          "max_score": 53.85
+        }
+      ],
+      "criteria": [
+        {
+          "criterion_id": "c01",
+          "name": "Установление контакта",
+          "answer": "yes",
+          "answer_label": "Да",
+          "value": null,
+          "score": 15.38,
+          "max_score": 15.38,
+          "weight": 10.0,
+          "effective_weight": 15.38,
+          "explanation": "Оператор в первом ответе поздоровался на языке клиента и представился: «Сәлеметсіз бе, мен Жанармын». Оба условия критерия выполнены.",
+          "evidence": [
+            {
+              "message_index": 9,
+              "timestamp": "02:08",
+              "quote": "Сәлеметсіз бе, мен Жанармын."
+            }
+          ],
+          "checked_range": null,
+          "na_reason": "",
+          "confidence": 1.0
+        },
+        {
+          "criterion_id": "c02",
+          "name": "Выявление потребности",
+          "answer": "na",
+          "answer_label": "N/A",
+          "value": null,
+          "score": 0.0,
+          "max_score": 0.0,
+          "weight": 15.0,
+          "effective_weight": 0.0,
+          "explanation": "Потребность была понятна с самого начала: клиент хотел узнать о возможности прямой покупки акций со средств D-счёта. Оператору хватало имеющихся данных для ответа, поэтому критерий неприменим.",
+          "evidence": [
+            {
+              "message_index": 0,
+              "timestamp": "00:00",
+              "quote": "D-шоттағы ақшаны акция сатып алуға тікелей қолдануға бола ма?"
+            },
+            {
+              "message_index": 9,
+              "timestamp": "02:08",
+              "quote": "D-шоттағы қаражатпен акцияны тікелей сатып ала алмайсыз."
+            }
+          ],
+          "checked_range": null,
+          "na_reason": "Данных для ответа хватало с самого начала.",
+          "confidence": 0.99
+        },
+        {
+          "criterion_id": "c03",
+          "name": "Идентификация",
+          "answer": "na",
+          "answer_label": "N/A",
+          "value": null,
+          "score": 0.0,
+          "max_score": 0.0,
+          "weight": 20.0,
+          "effective_weight": 0.0,
+          "explanation": "Идентификация не требовалась: клиент уточнял общие различия между счетами, а оператор дал общую информацию без раскрытия индивидуальных данных или выполнения защищённого действия.",
+          "evidence": [
+            {
+              "message_index": 9,
+              "timestamp": "02:08",
+              "quote": "D-шоттағы қаражатпен акцияны тікелей сатып ала алмайсыз. Акция сатып алғанда сауда шотын қараңыз."
+            },
+            {
+              "message_index": 12,
+              "timestamp": "03:23",
+              "quote": "Маған шоттардың айырмасын білу керек еді."
+            }
+          ],
+          "checked_range": null,
+          "na_reason": "Общий вопрос об использовании и различиях счетов, не требующий идентификации.",
+          "confidence": 0.99
+        },
+        {
+          "criterion_id": "c04",
+          "name": "Корректная и полная консультация",
+          "answer": "scale",
+          "answer_label": "20",
+          "value": 20,
+          "score": 30.77,
+          "max_score": 30.77,
+          "weight": 20.0,
+          "effective_weight": 30.77,
+          "explanation": "Запрос о возможности прямой покупки акций с D-счёта закрыт: оператор обозначил ограничение и указал торговый счёт. Клиент подтвердил, что понял ответ; дополнительных вопросов, требующих консультации, не задал.",
+          "evidence": [
+            {
+              "message_index": 9,
+              "timestamp": "02:08",
+              "quote": "D-шоттағы қаражатпен акцияны тікелей сатып ала алмайсыз. Акция сатып алғанда сауда шотын қараңыз."
+            },
+            {
+              "message_index": 10,
+              "timestamp": "02:50",
+              "quote": "Түсіндім, рақмет."
+            },
+            {
+              "message_index": 12,
+              "timestamp": "03:23",
+              "quote": "Маған шоттардың айырмасын білу керек еді."
+            }
+          ],
+          "checked_range": null,
+          "na_reason": "",
+          "confidence": 0.96
+        },
+        {
+          "criterion_id": "c05",
+          "name": "Эмпатия и клиентоориентированность",
+          "answer": "yes",
+          "answer_label": "Да",
+          "value": null,
+          "score": 23.08,
+          "max_score": 23.08,
+          "weight": 15.0,
+          "effective_weight": 23.08,
+          "explanation": "По критерию эмпатии и вежливости нарушения нет: оператор сохраняет уважительный тон, а клиент не выражает эмоций или неудобства, требующих отдельной реакции. Неуместное предложение личного перевода само по себе не относится к условиям данного критерия.",
+          "evidence": [
+            {
+              "message_index": 9,
+              "timestamp": "02:08",
+              "quote": "Сәлеметсіз бе, мен Жанармын."
+            },
+            {
+              "message_index": 12,
+              "timestamp": "03:23",
+              "quote": "Жоқ, рақмет. Маған шоттардың айырмасын білу керек еді."
+            },
+            {
+              "message_index": 13,
+              "timestamp": "03:59",
+              "quote": "Түсіндім. Басқа сұрақтарыңыз болса, осы чатқа жазыңыз. Сау болыңыз!"
+            }
+          ],
+          "checked_range": null,
+          "na_reason": "",
+          "confidence": 0.96
+        },
+        {
+          "criterion_id": "c06",
+          "name": "Управление диалогом, скорость и грамотность",
+          "answer": "scale",
+          "answer_label": "10",
+          "value": 10,
+          "score": 23.08,
+          "max_score": 23.08,
+          "weight": 15.0,
+          "effective_weight": 23.08,
+          "explanation": "Сбоев ясности и порядка ответов по правилам критерия не выявлено: клиент понял ответ без переспроса. Порог первой реакции соблюдён, предупреждение об ожидании не требовалось.",
+          "evidence": [
+            {
+              "message_index": 9,
+              "timestamp": "02:08",
+              "quote": "D-шоттағы қаражатпен акцияны тікелей сатып ала алмайсыз. Акция сатып алғанда сауда шотын қараңыз."
+            },
+            {
+              "message_index": 10,
+              "timestamp": "02:50",
+              "quote": "Түсіндім, рақмет."
+            },
+            {
+              "message_index": 12,
+              "timestamp": "03:23",
+              "quote": "Жоқ, рақмет. Маған шоттардың айырмасын білу керек еді."
+            }
+          ],
+          "checked_range": null,
+          "na_reason": "",
+          "confidence": 0.99
+        },
+        {
+          "criterion_id": "c07",
+          "name": "Завершение",
+          "answer": "yes",
+          "answer_label": "Да",
+          "value": null,
+          "score": 7.69,
+          "max_score": 7.69,
+          "weight": 5.0,
+          "effective_weight": 7.69,
+          "explanation": "В заключительной реплике оператор предложил написать в этот чат при других вопросах и попрощался. Оба условия критерия выполнены.",
+          "evidence": [
+            {
+              "message_index": 13,
+              "timestamp": "03:59",
+              "quote": "Басқа сұрақтарыңыз болса, осы чатқа жазыңыз. Сау болыңыз!"
+            }
+          ],
+          "checked_range": null,
+          "na_reason": "",
+          "confidence": 1.0
+        },
+        {
+          "criterion_id": "c08",
+          "name": "Грубые ошибки",
+          "answer": "yes",
+          "answer_label": "Да",
+          "value": null,
+          "score": 0.0,
+          "max_score": 0.0,
+          "weight": 0.0,
+          "effective_weight": 0.0,
+          "explanation": "Выявлена грубая ошибка: оператор предложил клиенту лично перевести ему деньги для инвестирования в обход компании. Отказ клиента не отменяет нарушения.",
+          "evidence": [
+            {
+              "message_index": 11,
+              "timestamp": "03:00",
+              "quote": "Қаласаңыз, ақшаны маған жеке аударыңыз. Компания арқылы рәсімдемей-ақ, оны сізге пайда түсетіндей етіп салып беремін."
+            }
+          ],
+          "checked_range": null,
+          "na_reason": "",
+          "confidence": 1.0
+        }
+      ],
+      "model": "gemini-3.8-flash, gpt-6.1-sol",
+      "cost_usd": 0.04924,
+      "evaluated_at": "2026-11-08T06:15:07+00:00"
+    },
+    {
+      "conversation_id": "p2-kz-004",
+      "checklist_id": "freedom-chat-quality",
+      "checklist_version": 1,
+      "total_score": 100.0,
+      "gross_error": {
+        "flag": false,
+        "criterion_id": null,
+        "reason": ""
+      },
+      "sections": [
+        {
+          "id": "start",
+          "name": "Начало и понимание запроса",
+          "score": 45.45,
+          "max_score": 45.45
+        },
+        {
+          "id": "security",
+          "name": "Безопасность и решение",
+          "score": null,
+          "max_score": 0.0
+        },
+        {
+          "id": "flow",
+          "name": "Ведение и завершение диалога",
+          "score": 54.55,
+          "max_score": 54.55
+        }
+      ],
+      "criteria": [
+        {
+          "criterion_id": "c01",
+          "name": "Установление контакта",
+          "answer": "yes",
+          "answer_label": "Да",
+          "value": null,
+          "score": 18.18,
+          "max_score": 18.18,
+          "weight": 10.0,
+          "effective_weight": 18.18,
+          "explanation": "Оператор в первом ответе поздоровался на казахском языке и представился Айгүл. Оба обязательных элемента критерия выполнены.",
+          "evidence": [
+            {
+              "message_index": 0,
+              "timestamp": "00:00",
+              "quote": "Сәлеметсіз бе."
+            },
+            {
+              "message_index": 9,
+              "timestamp": "01:58",
+              "quote": "Сәлеметсіз бе, менің атым Айгүл."
+            }
+          ],
+          "checked_range": null,
+          "na_reason": "",
+          "confidence": 1.0
+        },
+        {
+          "criterion_id": "c02",
+          "name": "Выявление потребности",
+          "answer": "yes",
+          "answer_label": "Да",
+          "value": null,
+          "score": 27.27,
+          "max_score": 27.27,
+          "weight": 15.0,
+          "effective_weight": 27.27,
+          "explanation": "Оператору не хватало информации о сути обращения, и он задал уместный уточняющий вопрос. Клиент покинул чат, не сообщив свой запрос.",
+          "evidence": [
+            {
+              "message_index": 4,
+              "timestamp": "00:23",
+              "quote": "Операторға қосыңызшы, сұрағымды соған айтайын."
+            },
+            {
+              "message_index": 9,
+              "timestamp": "01:58",
+              "quote": "Айта беріңіз, қалай көмектесе аламын?"
+            },
+            {
+              "message_index": 10,
+              "timestamp": "02:06",
+              "quote": "Клиент операторға сұрағын жазбай тұрып, чаттан шықты."
+            }
+          ],
+          "checked_range": null,
+          "na_reason": "",
+          "confidence": 1.0
+        },
+        {
+          "criterion_id": "c03",
+          "name": "Идентификация",
+          "answer": "na",
+          "answer_label": "N/A",
+          "value": null,
+          "score": 0.0,
+          "max_score": 0.0,
+          "weight": 20.0,
+          "effective_weight": 0.0,
+          "explanation": "Идентификация не требовалась: клиент не успел сообщить запрос, а оператор не раскрывал данные и не выполнял защищённых действий.",
+          "evidence": [
+            {
+              "message_index": 9,
+              "timestamp": "01:58",
+              "quote": "Сәлеметсіз бе, менің атым Айгүл. Айта беріңіз, қалай көмектесе аламын?"
+            },
+            {
+              "message_index": 10,
+              "timestamp": "02:06",
+              "quote": "Клиент операторға сұрағын жазбай тұрып, чаттан шықты."
+            }
+          ],
+          "checked_range": null,
+          "na_reason": "Запрос не был изложен; действий, требующих идентификации, не было.",
+          "confidence": 0.99
+        },
+        {
+          "criterion_id": "c04",
+          "name": "Корректная и полная консультация",
+          "answer": "na",
+          "answer_label": "N/A",
+          "value": null,
+          "score": 0.0,
+          "max_score": 0.0,
+          "weight": 20.0,
+          "effective_weight": 0.0,
+          "explanation": "Оценить корректность и полноту консультации невозможно: клиент покинул чат до того, как сообщил свой вопрос оператору.",
+          "evidence": [
+            {
+              "message_index": 9,
+              "timestamp": "01:58",
+              "quote": "Айта беріңіз, қалай көмектесе аламын?"
+            },
+            {
+              "message_index": 10,
+              "timestamp": "02:06",
+              "quote": "Клиент операторға сұрағын жазбай тұрып, чаттан шықты."
+            }
+          ],
+          "checked_range": null,
+          "na_reason": "Чат закончился до того, как клиент сформулировал запрос.",
+          "confidence": 1.0
+        },
+        {
+          "criterion_id": "c05",
+          "name": "Эмпатия и клиентоориентированность",
+          "answer": "yes",
+          "answer_label": "Да",
+          "value": null,
+          "score": 27.27,
+          "max_score": 27.27,
+          "weight": 15.0,
+          "effective_weight": 27.27,
+          "explanation": "Оператор вежливо представилась и предложила помощь. Явных эмоций или неудобств со стороны клиента не было, поэтому отдельная эмпатическая реакция не требовалась.",
+          "evidence": [
+            {
+              "message_index": 9,
+              "timestamp": "01:58",
+              "quote": "Сәлеметсіз бе, менің атым Айгүл. Айта беріңіз, қалай көмектесе аламын?"
+            }
+          ],
+          "checked_range": null,
+          "na_reason": "",
+          "confidence": 1.0
+        },
+        {
+          "criterion_id": "c06",
+          "name": "Управление диалогом, скорость и грамотность",
+          "answer": "scale",
+          "answer_label": "10",
+          "value": 10,
+          "score": 27.27,
+          "max_score": 27.27,
+          "weight": 15.0,
+          "effective_weight": 27.27,
+          "explanation": "Сбоев нет: оператор своевременно ответил и понятно предложил клиенту изложить вопрос. Клиент вышел из чата, не задав вопрос оператору.",
+          "evidence": [
+            {
+              "message_index": 9,
+              "timestamp": "01:58",
+              "quote": "Сәлеметсіз бе, менің атым Айгүл. Айта беріңіз, қалай көмектесе аламын?"
+            },
+            {
+              "message_index": 10,
+              "timestamp": "02:06",
+              "quote": "Клиент операторға сұрағын жазбай тұрып, чаттан шықты."
+            }
+          ],
+          "checked_range": null,
+          "na_reason": "",
+          "confidence": 1.0
+        },
+        {
+          "criterion_id": "c07",
+          "name": "Завершение",
+          "answer": "na",
+          "answer_label": "N/A",
+          "value": null,
+          "score": 0.0,
+          "max_score": 0.0,
+          "weight": 5.0,
+          "effective_weight": 0.0,
+          "explanation": "Клиент вышел из чата до того, как написал оператору свой вопрос. Разговор оборвался по инициативе клиента, поэтому завершение не оценивается.",
+          "evidence": [
+            {
+              "message_index": 10,
+              "timestamp": "02:06",
+              "quote": "Клиент операторға сұрағын жазбай тұрып, чаттан шықты."
+            }
+          ],
+          "checked_range": null,
+          "na_reason": "Клиент покинул чат до возможности его завершить.",
+          "confidence": 1.0
+        },
+        {
+          "criterion_id": "c08",
+          "name": "Грубые ошибки",
+          "answer": "no",
+          "answer_label": "Нет",
+          "value": null,
+          "score": 0.0,
+          "max_score": 0.0,
+          "weight": 0.0,
+          "effective_weight": 0.0,
+          "explanation": "Грубых ошибок не выявлено: оператор вежливо представилась и предложила помощь, после чего клиент покинул чат.",
+          "evidence": [
+            {
+              "message_index": 9,
+              "timestamp": "01:58",
+              "quote": "Сәлеметсіз бе, менің атым Айгүл. Айта беріңіз, қалай көмектесе аламын?"
+            }
+          ],
+          "checked_range": null,
+          "na_reason": "",
+          "confidence": 1.0
+        }
+      ],
+      "model": "gemini-3.8-flash, gpt-6.1-sol",
+      "cost_usd": 0.03911,
+      "evaluated_at": "2026-11-08T06:15:02+00:00"
+    },
+    {
+      "conversation_id": "p2-ru-001",
+      "checklist_id": "freedom-chat-quality",
+      "checklist_version": 1,
+      "total_score": 92.31,
+      "gross_error": {
+        "flag": false,
+        "criterion_id": null,
+        "reason": ""
+      },
+      "sections": [
+        {
+          "id": "start",
+          "name": "Начало и понимание запроса",
+          "score": 15.38,
+          "max_score": 15.38
+        },
+        {
+          "id": "security",
+          "name": "Безопасность и решение",
+          "score": 23.08,
+          "max_score": 30.77
+        },
+        {
+          "id": "flow",
+          "name": "Ведение и завершение диалога",
+          "score": 53.85,
+          "max_score": 53.85
+        }
+      ],
+      "criteria": [
+        {
+          "criterion_id": "c01",
+          "name": "Установление контакта",
+          "answer": "yes",
+          "answer_label": "Да",
+          "value": null,
+          "score": 15.38,
+          "max_score": 15.38,
+          "weight": 10.0,
+          "effective_weight": 15.38,
+          "explanation": "В первом ответе оператор поздоровался на языке клиента и представился по имени. Оба условия критерия выполнены.",
+          "evidence": [
+            {
+              "message_index": 9,
+              "timestamp": "01:02",
+              "quote": "Здравствуйте! Меня зовут Лена, поддержка Freedom Broker."
+            }
+          ],
+          "checked_range": null,
+          "na_reason": "",
+          "confidence": 1.0
+        },
+        {
+          "criterion_id": "c02",
+          "name": "Выявление потребности",
+          "answer": "na",
+          "answer_label": "N/A",
+          "value": null,
+          "score": 0.0,
+          "max_score": 0.0,
+          "weight": 15.0,
+          "effective_weight": 0.0,
+          "explanation": "Данных для ответа хватало с самого начала: клиент прямо обозначил оба интересующих способа просмотра тарифа. Уточняющие вопросы для выявления потребности не требовались.",
+          "evidence": [
+            {
+              "message_index": 0,
+              "timestamp": "00:00",
+              "quote": "Где с компьютера посмотреть текущий тариф? И если он указан в отчёте брокера, подскажите ещё название раздела."
+            },
+            {
+              "message_index": 4,
+              "timestamp": "00:18",
+              "quote": "Хочу сверить оба варианта."
+            }
+          ],
+          "checked_range": null,
+          "na_reason": "Данных для ответа хватало с самого начала.",
+          "confidence": 0.99
+        },
+        {
+          "criterion_id": "c03",
+          "name": "Идентификация",
+          "answer": "na",
+          "answer_label": "N/A",
+          "value": null,
+          "score": 0.0,
+          "max_score": 0.0,
+          "weight": 20.0,
+          "effective_weight": 0.0,
+          "explanation": "Идентификация не требовалась: оператор дал общую инструкцию по навигации в веб-версии, не сообщая фактический тариф клиента или другие защищённые данные.",
+          "evidence": [
+            {
+              "message_index": 0,
+              "timestamp": "00:00",
+              "quote": "Где с компьютера посмотреть текущий тариф?"
+            },
+            {
+              "message_index": 9,
+              "timestamp": "01:02",
+              "quote": "В веб-версии откройте «Кабинет»: текущий тариф указан под вашим ФИО."
+            }
+          ],
+          "checked_range": null,
+          "na_reason": "Запрос касался инструкции в приложении и не требовал раскрытия данных счёта или защищённых действий.",
+          "confidence": 1.0
+        },
+        {
+          "criterion_id": "c04",
+          "name": "Корректная и полная консультация",
+          "answer": "scale",
+          "answer_label": "15",
+          "value": 15,
+          "score": 23.08,
+          "max_score": 30.77,
+          "weight": 20.0,
+          "effective_weight": 30.77,
+          "explanation": "Основной вопрос решён: клиент нашёл текущий тариф в веб-кабинете. Однако оператор не назвал раздел брокерского отчёта, о котором клиент также спрашивал.",
+          "evidence": [
+            {
+              "message_index": 0,
+              "timestamp": "00:00",
+              "quote": "И если он указан в отчёте брокера, подскажите ещё название раздела."
+            },
+            {
+              "message_index": 9,
+              "timestamp": "01:02",
+              "quote": "В веб-версии откройте «Кабинет»: текущий тариф указан под вашим ФИО."
+            },
+            {
+              "message_index": 10,
+              "timestamp": "01:23",
+              "quote": "Нашла, спасибо. В отчёте я посмотрю позже."
+            }
+          ],
+          "checked_range": {
+            "from_index": 9,
+            "to_index": 11
+          },
+          "na_reason": "",
+          "confidence": 0.73
+        },
+        {
+          "criterion_id": "c05",
+          "name": "Эмпатия и клиентоориентированность",
+          "answer": "yes",
+          "answer_label": "Да",
+          "value": null,
+          "score": 23.08,
+          "max_score": 23.08,
+          "weight": 15.0,
+          "effective_weight": 23.08,
+          "explanation": "Оператор вежлив на протяжении всего диалога. Явных эмоций или неудобств, требующих отдельной реакции, клиент не выражал.",
+          "evidence": [
+            {
+              "message_index": 9,
+              "timestamp": "01:02",
+              "quote": "Здравствуйте! Меня зовут Лена, поддержка Freedom Broker."
+            },
+            {
+              "message_index": 11,
+              "timestamp": "01:57",
+              "quote": "Пожалуйста. Если понадобятся ещё подсказки, напишите нам. До свидания!"
+            }
+          ],
+          "checked_range": null,
+          "na_reason": "",
+          "confidence": 0.99
+        },
+        {
+          "criterion_id": "c06",
+          "name": "Управление диалогом, скорость и грамотность",
+          "answer": "scale",
+          "answer_label": "10",
+          "value": 10,
+          "score": 23.08,
+          "max_score": 23.08,
+          "weight": 15.0,
+          "effective_weight": 23.08,
+          "explanation": "Сбоев ясности и порядка общения не выявлено: клиент понял инструкцию и нашёл тариф. Первая реакция своевременная, предупреждать об ожидании не требовалось.",
+          "evidence": [
+            {
+              "message_index": 9,
+              "timestamp": "01:02",
+              "quote": "В веб-версии откройте «Кабинет»: текущий тариф указан под вашим ФИО."
+            },
+            {
+              "message_index": 10,
+              "timestamp": "01:23",
+              "quote": "Нашла, спасибо. В отчёте я посмотрю позже."
+            }
+          ],
+          "checked_range": null,
+          "na_reason": "",
+          "confidence": 0.98
+        },
+        {
+          "criterion_id": "c07",
+          "name": "Завершение",
+          "answer": "yes",
+          "answer_label": "Да",
+          "value": null,
+          "score": 7.69,
+          "max_score": 7.69,
+          "weight": 5.0,
+          "effective_weight": 7.69,
+          "explanation": "Оператор в заключительной реплике предложил обратиться за дополнительными подсказками и попрощался.",
+          "evidence": [
+            {
+              "message_index": 11,
+              "timestamp": "01:57",
+              "quote": "Если понадобятся ещё подсказки, напишите нам. До свидания!"
+            }
+          ],
+          "checked_range": null,
+          "na_reason": "",
+          "confidence": 1.0
+        },
+        {
+          "criterion_id": "c08",
+          "name": "Грубые ошибки",
+          "answer": "no",
+          "answer_label": "Нет",
+          "value": null,
+          "score": 0.0,
+          "max_score": 0.0,
+          "weight": 0.0,
+          "effective_weight": 0.0,
+          "explanation": "Грубых ошибок не выявлено: оператор не оскорблял клиента, не предлагал платных услуг в обход компании и не раскрывал конфиденциальную информацию. Указание, где клиент может самостоятельно посмотреть тариф, не является раскрытием данных.",
+          "evidence": [
+            {
+              "message_index": 9,
+              "timestamp": "01:02",
+              "quote": "В веб-версии откройте «Кабинет»: текущий тариф указан под вашим ФИО."
+            },
+            {
+              "message_index": 11,
+              "timestamp": "01:57",
+              "quote": "Пожалуйста. Если понадобятся ещё подсказки, напишите нам. До свидания!"
+            }
+          ],
+          "checked_range": {
+            "from_index": 9,
+            "to_index": 11
+          },
+          "na_reason": "",
+          "confidence": 1.0
+        }
+      ],
+      "model": "gemini-3.8-flash, gpt-6.1-sol",
+      "cost_usd": 0.05837,
+      "evaluated_at": "2026-11-08T06:15:11+00:00"
+    },
+    {
+      "conversation_id": "p2-ru-002",
+      "checklist_id": "freedom-chat-quality",
+      "checklist_version": 1,
+      "total_score": 47.69,
+      "gross_error": {
+        "flag": false,
+        "criterion_id": null,
+        "reason": ""
+      },
+      "sections": [
+        {
+          "id": "start",
+          "name": "Начало и понимание запроса",
+          "score": 15.38,
+          "max_score": 15.38
+        },
+        {
+          "id": "security",
+          "name": "Безопасность и решение",
+          "score": 15.38,
+          "max_score": 30.77
+        },
+        {
+          "id": "flow",
+          "name": "Ведение и завершение диалога",
+          "score": 16.92,
+          "max_score": 53.85
+        }
+      ],
+      "criteria": [
+        {
+          "criterion_id": "c01",
+          "name": "Установление контакта",
+          "answer": "yes",
+          "answer_label": "Да",
+          "value": null,
+          "score": 15.38,
+          "max_score": 15.38,
+          "weight": 10.0,
+          "effective_weight": 15.38,
+          "explanation": "Оператор в первом ответе поздоровался на русском языке и представился Анной. Оба условия критерия выполнены.",
+          "evidence": [
+            {
+              "message_index": 9,
+              "timestamp": "01:30",
+              "quote": "Здравствуйте, я Анна."
+            }
+          ],
+          "checked_range": null,
+          "na_reason": "",
+          "confidence": 1.0
+        },
+        {
+          "criterion_id": "c02",
+          "name": "Выявление потребности",
+          "answer": "na",
+          "answer_label": "N/A",
+          "value": null,
+          "score": 0.0,
+          "max_score": 0.0,
+          "weight": 15.0,
+          "effective_weight": 0.0,
+          "explanation": "Данных для ответа хватало с самого начала: причина ограничения и вопросы клиента были явно указаны. Оператор не ответил о сроке повторного вывода, но это не свидетельствует о необходимости уточнять потребность.",
+          "evidence": [
+            {
+              "message_index": 0,
+              "timestamp": "00:00",
+              "quote": "В приложении требует обновить анкетные данные. Где это сделать и когда повторять вывод?"
+            },
+            {
+              "message_index": 9,
+              "timestamp": "01:30",
+              "quote": "Откройте «Меню → Поручения → Персональные данные → Изменение сведений». Там подайте поручение."
+            }
+          ],
+          "checked_range": null,
+          "na_reason": "Данных для ответа хватало с самого начала.",
+          "confidence": 0.98
+        },
+        {
+          "criterion_id": "c03",
+          "name": "Идентификация",
+          "answer": "na",
+          "answer_label": "N/A",
+          "value": null,
+          "score": 0.0,
+          "max_score": 0.0,
+          "weight": 20.0,
+          "effective_weight": 0.0,
+          "explanation": "Ответ оператора ограничился общей навигацией в приложении, для которой идентификация не требуется. Подачу поручения клиент выполнил самостоятельно, а сведений о его счёте оператор не сообщал.",
+          "evidence": [
+            {
+              "message_index": 9,
+              "timestamp": "01:30",
+              "quote": "Откройте «Меню → Поручения → Персональные данные → Изменение сведений». Там подайте поручение."
+            },
+            {
+              "message_index": 10,
+              "timestamp": "02:02",
+              "quote": "Подал."
+            }
+          ],
+          "checked_range": null,
+          "na_reason": "Общая инструкция в приложении без раскрытия данных и выполнения защищённых действий оператором.",
+          "confidence": 0.98
+        },
+        {
+          "criterion_id": "c04",
+          "name": "Корректная и полная консультация",
+          "answer": "scale",
+          "answer_label": "10",
+          "value": 10,
+          "score": 15.38,
+          "max_score": 30.77,
+          "weight": 20.0,
+          "effective_weight": 30.77,
+          "explanation": "Часть запроса закрыта: клиент получил инструкцию и подал поручение на изменение данных. Однако оператор не объяснил, когда можно повторить вывод, и не предложил следующий шаг по этому вопросу.",
+          "evidence": [
+            {
+              "message_index": 9,
+              "timestamp": "01:30",
+              "quote": "Откройте «Меню → Поручения → Персональные данные → Изменение сведений». Там подайте поручение."
+            },
+            {
+              "message_index": 10,
+              "timestamp": "02:02",
+              "quote": "Подал. Мне сейчас можно заново нажать на вывод или нужно дождаться чего-то?"
+            },
+            {
+              "message_index": 11,
+              "timestamp": "02:47",
+              "quote": "Для обновления используется указанное меню."
+            },
+            {
+              "message_index": 12,
+              "timestamp": "03:00",
+              "quote": "Я про вывод спрашиваю. Уже второй день не получается."
+            }
+          ],
+          "checked_range": {
+            "from_index": 10,
+            "to_index": 13
+          },
+          "na_reason": "",
+          "confidence": 1.0
+        },
+        {
+          "criterion_id": "c05",
+          "name": "Эмпатия и клиентоориентированность",
+          "answer": "no",
+          "answer_label": "Нет",
+          "value": null,
+          "score": 0.0,
+          "max_score": 23.08,
+          "weight": 15.0,
+          "effective_weight": 23.08,
+          "explanation": "Грубости нет, но оператор проигнорировал повторно описанное неудобство — невозможность вывести деньги второй день — и завершил чат без признания проблемы или предложения варианта действий. Нарушение связано не только с неотвеченным вопросом о выводе.",
+          "evidence": [
+            {
+              "message_index": 12,
+              "timestamp": "03:00",
+              "quote": "Я про вывод спрашиваю. Уже второй день не получается."
+            },
+            {
+              "message_index": 13,
+              "timestamp": "03:26",
+              "quote": "Если появятся ещё вопросы, напишите нам. До свидания."
+            }
+          ],
+          "checked_range": {
+            "from_index": 12,
+            "to_index": 13
+          },
+          "na_reason": "",
+          "confidence": 0.98
+        },
+        {
+          "criterion_id": "c06",
+          "name": "Управление диалогом, скорость и грамотность",
+          "answer": "scale",
+          "answer_label": "4",
+          "value": 4,
+          "score": 9.23,
+          "max_score": 23.08,
+          "weight": 15.0,
+          "effective_weight": 23.08,
+          "explanation": "Клиенту пришлось повторно объяснять, что вопрос касается вывода денег, поскольку оператор ответил про меню обновления данных. После уточнения оператор завершил диалог, не ответив на вопрос.",
+          "evidence": [
+            {
+              "message_index": 10,
+              "timestamp": "02:02",
+              "quote": "Мне сейчас можно заново нажать на вывод или нужно дождаться чего-то?"
+            },
+            {
+              "message_index": 11,
+              "timestamp": "02:47",
+              "quote": "Для обновления используется указанное меню."
+            },
+            {
+              "message_index": 12,
+              "timestamp": "03:00",
+              "quote": "Я про вывод спрашиваю. Уже второй день не получается."
+            },
+            {
+              "message_index": 13,
+              "timestamp": "03:26",
+              "quote": "Если появятся ещё вопросы, напишите нам. До свидания."
+            }
+          ],
+          "checked_range": {
+            "from_index": 10,
+            "to_index": 13
+          },
+          "na_reason": "",
+          "confidence": 1.0
+        },
+        {
+          "criterion_id": "c07",
+          "name": "Завершение",
+          "answer": "yes",
+          "answer_label": "Да",
+          "value": null,
+          "score": 7.69,
+          "max_score": 7.69,
+          "weight": 5.0,
+          "effective_weight": 7.69,
+          "explanation": "В заключительной реплике оператор предложил написать при появлении дополнительных вопросов и попрощался. Оба необходимых элемента завершения присутствуют.",
+          "evidence": [
+            {
+              "message_index": 13,
+              "timestamp": "03:26",
+              "quote": "Если появятся ещё вопросы, напишите нам. До свидания."
+            }
+          ],
+          "checked_range": null,
+          "na_reason": "",
+          "confidence": 1.0
+        },
+        {
+          "criterion_id": "c08",
+          "name": "Грубые ошибки",
+          "answer": "no",
+          "answer_label": "Нет",
+          "value": null,
+          "score": 0.0,
+          "max_score": 0.0,
+          "weight": 0.0,
+          "effective_weight": 0.0,
+          "explanation": "Ни одно из трёх нарушений не выявлено. Оператор дал общую инструкцию и завершил диалог, не раскрывая конфиденциальных данных и не предлагая частных платных услуг.",
+          "evidence": [
+            {
+              "message_index": 9,
+              "timestamp": "01:30",
+              "quote": "Откройте «Меню → Поручения → Персональные данные → Изменение сведений». Там подайте поручение."
+            },
+            {
+              "message_index": 11,
+              "timestamp": "02:47",
+              "quote": "Для обновления используется указанное меню."
+            },
+            {
+              "message_index": 13,
+              "timestamp": "03:26",
+              "quote": "Если появятся ещё вопросы, напишите нам. До свидания."
+            }
+          ],
+          "checked_range": null,
+          "na_reason": "",
+          "confidence": 1.0
+        }
+      ],
+      "model": "gemini-3.8-flash, gpt-6.1-sol",
+      "cost_usd": 0.04619,
+      "evaluated_at": "2026-11-08T06:15:06+00:00"
+    },
+    {
+      "conversation_id": "p2-ru-003",
+      "checklist_id": "freedom-chat-quality",
+      "checklist_version": 1,
+      "total_score": 100.0,
+      "gross_error": {
+        "flag": false,
+        "criterion_id": null,
+        "reason": ""
+      },
+      "sections": [
+        {
+          "id": "start",
+          "name": "Начало и понимание запроса",
+          "score": 25.0,
+          "max_score": 25.0
+        },
+        {
+          "id": "security",
+          "name": "Безопасность и решение",
+          "score": 40.0,
+          "max_score": 40.0
+        },
+        {
+          "id": "flow",
+          "name": "Ведение и завершение диалога",
+          "score": 35.0,
+          "max_score": 35.0
+        }
+      ],
+      "criteria": [
+        {
+          "criterion_id": "c01",
+          "name": "Установление контакта",
+          "answer": "yes",
+          "answer_label": "Да",
+          "value": null,
+          "score": 10.0,
+          "max_score": 10.0,
+          "weight": 10.0,
+          "effective_weight": 10.0,
+          "explanation": "Оператор в первом ответе поздоровался на языке клиента и представился: «Здравствуйте, меня зовут Ринат». Оба условия критерия выполнены.",
+          "evidence": [
+            {
+              "message_index": 9,
+              "timestamp": "01:58",
+              "quote": "Здравствуйте, меня зовут Ринат."
+            }
+          ],
+          "checked_range": null,
+          "na_reason": "",
+          "confidence": 1.0
+        },
+        {
+          "criterion_id": "c02",
+          "name": "Выявление потребности",
+          "answer": "yes",
+          "answer_label": "Да",
+          "value": null,
+          "score": 15.0,
+          "max_score": 15.0,
+          "weight": 15.0,
+          "effective_weight": 15.0,
+          "explanation": "Оператор учёл, что клиент уже отправил перевод, и уточнил недостающие время отправки и валюту перед передачей информации специалистам.",
+          "evidence": [
+            {
+              "message_index": 4,
+              "timestamp": "00:32",
+              "quote": "Уже отправила. Подключите оператора для проверки."
+            },
+            {
+              "message_index": 12,
+              "timestamp": "03:16",
+              "quote": "Уточните, когда отправили деньги и в какой валюте."
+            },
+            {
+              "message_index": 13,
+              "timestamp": "03:53",
+              "quote": "Сегодня утром, в евро."
+            }
+          ],
+          "checked_range": null,
+          "na_reason": "",
+          "confidence": 1.0
+        },
+        {
+          "criterion_id": "c03",
+          "name": "Идентификация",
+          "answer": "yes",
+          "answer_label": "Да",
+          "value": null,
+          "score": 20.0,
+          "max_score": 20.0,
+          "weight": 20.0,
+          "effective_weight": 20.0,
+          "explanation": "Личность клиента подтверждена системным сообщением после реплики оператора о необходимости идентификации. Подтверждение получено до действий по проверке конкретного перевода.",
+          "evidence": [
+            {
+              "message_index": 9,
+              "timestamp": "01:58",
+              "quote": "Для проверки платежа сначала нужно подтвердить личность."
+            },
+            {
+              "message_index": 11,
+              "timestamp": "02:52",
+              "quote": "Личность клиента подтверждена."
+            },
+            {
+              "message_index": 14,
+              "timestamp": "04:43",
+              "quote": "Передал информацию специалистам по зачислениям."
+            }
+          ],
+          "checked_range": null,
+          "na_reason": "",
+          "confidence": 0.99
+        },
+        {
+          "criterion_id": "c04",
+          "name": "Корректная и полная консультация",
+          "answer": "scale",
+          "answer_label": "20",
+          "value": 20,
+          "score": 20.0,
+          "max_score": 20.0,
+          "weight": 20.0,
+          "effective_weight": 20.0,
+          "explanation": "Все существенные вопросы закрыты: для проверки зачисления дан корректный следующий шаг с ответом в этом чате, разница статусов объяснена. Оператор также уточнил, что скриншот и дополнительные действия пока не нужны.",
+          "evidence": [
+            {
+              "message_index": 14,
+              "timestamp": "04:43",
+              "quote": "Передал информацию специалистам по зачислениям. Ответ по вашему переводу сообщим в этом чате."
+            },
+            {
+              "message_index": 17,
+              "timestamp": "05:58",
+              "quote": "То, что банк отправил перевод, ещё не подтверждает зачисление на брокерский счёт."
+            },
+            {
+              "message_index": 19,
+              "timestamp": "06:40",
+              "quote": "Пока не нужно. Если для проверки потребуются дополнительные сведения, мы сообщим об этом здесь."
+            },
+            {
+              "message_index": 21,
+              "timestamp": "07:22",
+              "quote": "Пока дополнительных действий от вас не нужно."
+            }
+          ],
+          "checked_range": null,
+          "na_reason": "",
+          "confidence": 1.0
+        },
+        {
+          "criterion_id": "c05",
+          "name": "Эмпатия и клиентоориентированность",
+          "answer": "yes",
+          "answer_label": "Да",
+          "value": null,
+          "score": 15.0,
+          "max_score": 15.0,
+          "weight": 15.0,
+          "effective_weight": 15.0,
+          "explanation": "Оператор признал переживание, связанное с тем, что отправленные деньги не видны, и передал информацию на проверку. Грубости, упрёков или пренебрежения в его репликах нет.",
+          "evidence": [
+            {
+              "message_index": 0,
+              "timestamp": "00:00",
+              "quote": "Пополняла счёт, деньги в приложении не появились. Уже начинаю переживать."
+            },
+            {
+              "message_index": 9,
+              "timestamp": "01:58",
+              "quote": "Понимаю, что неприятно не видеть отправленные деньги."
+            },
+            {
+              "message_index": 14,
+              "timestamp": "04:43",
+              "quote": "Передал информацию специалистам по зачислениям. Ответ по вашему переводу сообщим в этом чате."
+            }
+          ],
+          "checked_range": null,
+          "na_reason": "",
+          "confidence": 0.99
+        },
+        {
+          "criterion_id": "c06",
+          "name": "Управление диалогом, скорость и грамотность",
+          "answer": "scale",
+          "answer_label": "10",
+          "value": 10,
+          "score": 15.0,
+          "max_score": 15.0,
+          "weight": 15.0,
+          "effective_weight": 15.0,
+          "explanation": "Заметных сбоев ясности, порядка ответов и скорости не выявлено. Оператор объяснил различие статусов перевода и сообщил, что дополнительных действий пока не требуется.",
+          "evidence": [
+            {
+              "message_index": 14,
+              "timestamp": "04:43",
+              "quote": "Передал информацию специалистам по зачислениям. Ответ по вашему переводу сообщим в этом чате."
+            },
+            {
+              "message_index": 17,
+              "timestamp": "05:58",
+              "quote": "Это разные статусы. То, что банк отправил перевод, ещё не подтверждает зачисление на брокерский счёт."
+            },
+            {
+              "message_index": 21,
+              "timestamp": "07:22",
+              "quote": "Пока дополнительных действий от вас не нужно."
+            }
+          ],
+          "checked_range": null,
+          "na_reason": "",
+          "confidence": 0.97
+        },
+        {
+          "criterion_id": "c07",
+          "name": "Завершение",
+          "answer": "yes",
+          "answer_label": "Да",
+          "value": null,
+          "score": 5.0,
+          "max_score": 5.0,
+          "weight": 5.0,
+          "effective_weight": 5.0,
+          "explanation": "Оператор в заключительной реплике сообщил, что дополнительных действий от клиента не требуется, и попрощался. Оба условия критерия выполнены.",
+          "evidence": [
+            {
+              "message_index": 21,
+              "timestamp": "07:22",
+              "quote": "Пока дополнительных действий от вас не нужно. Спасибо за ожидание, до свидания!"
+            }
+          ],
+          "checked_range": null,
+          "na_reason": "",
+          "confidence": 1.0
+        },
+        {
+          "criterion_id": "c08",
+          "name": "Грубые ошибки",
+          "answer": "no",
+          "answer_label": "Нет",
+          "value": null,
+          "score": 0.0,
+          "max_score": 0.0,
+          "weight": 0.0,
+          "effective_weight": 0.0,
+          "explanation": "Ни один из трёх видов грубой ошибки не выявлен. Оператор общался корректно, направил вопрос профильным специалистам и не раскрывал конфиденциальную информацию.",
+          "evidence": [
+            {
+              "message_index": 9,
+              "timestamp": "01:58",
+              "quote": "Для проверки платежа сначала нужно подтвердить личность."
+            },
+            {
+              "message_index": 11,
+              "timestamp": "02:52",
+              "quote": "Личность клиента подтверждена."
+            },
+            {
+              "message_index": 14,
+              "timestamp": "04:43",
+              "quote": "Передал информацию специалистам по зачислениям. Ответ по вашему переводу сообщим в этом чате."
+            }
+          ],
+          "checked_range": {
+            "from_index": 9,
+            "to_index": 21
+          },
+          "na_reason": "",
+          "confidence": 1.0
+        }
+      ],
+      "model": "gemini-3.8-flash, gpt-6.1-sol",
+      "cost_usd": 0.05032,
+      "evaluated_at": "2026-11-08T06:15:08+00:00"
+    },
+    {
+      "conversation_id": "p2-ru-004",
+      "checklist_id": "freedom-chat-quality",
+      "checklist_version": 1,
+      "total_score": 26.0,
+      "gross_error": {
+        "flag": true,
+        "criterion_id": "c08",
+        "reason": "Выявлено раскрытие конфиденциальной информации: оператор сообщил об ограничении на вывод по счёту до подтверждения личности собеседника."
+      },
+      "sections": [
+        {
+          "id": "start",
+          "name": "Начало и понимание запроса",
+          "score": 0.0,
+          "max_score": 25.0
+        },
+        {
+          "id": "security",
+          "name": "Безопасность и решение",
+          "score": 5.0,
+          "max_score": 40.0
+        },
+        {
+          "id": "flow",
+          "name": "Ведение и завершение диалога",
+          "score": 21.0,
+          "max_score": 35.0
+        }
+      ],
+      "criteria": [
+        {
+          "criterion_id": "c01",
+          "name": "Установление контакта",
+          "answer": "no",
+          "answer_label": "Нет",
+          "value": null,
+          "score": 0.0,
+          "max_score": 10.0,
+          "weight": 10.0,
+          "effective_weight": 10.0,
+          "explanation": "Оператор в первом ответе не поздоровался и не представился. Оба обязательных элемента установления контакта отсутствуют.",
+          "evidence": [
+            {
+              "message_index": 9,
+              "timestamp": "02:23",
+              "quote": "Сейчас. Там оно у вас по счёту стоит, поэтому через тот раздел опять."
+            }
+          ],
+          "checked_range": {
+            "from_index": 9,
+            "to_index": 9
+          },
+          "na_reason": "",
+          "confidence": 1.0
+        },
+        {
+          "criterion_id": "c02",
+          "name": "Выявление потребности",
+          "answer": "no",
+          "answer_label": "Нет",
+          "value": null,
+          "score": 0.0,
+          "max_score": 15.0,
+          "weight": 15.0,
+          "effective_weight": 15.0,
+          "explanation": "Для выяснения причины проблемы требовалось уточнить, что именно происходит при попытке вывода. Оператор не задал уточняющих вопросов и ответил об ограничении, не установив обстоятельства сбоя.",
+          "evidence": [
+            {
+              "message_index": 0,
+              "timestamp": "00:00",
+              "quote": "Опять не получается вывести деньги. Проверьте, что случилось со счётом."
+            },
+            {
+              "message_index": 11,
+              "timestamp": "02:54",
+              "quote": "На вашем счёте действует ограничение на вывод. Детали смотрите в приложении."
+            }
+          ],
+          "checked_range": {
+            "from_index": 9,
+            "to_index": 13
+          },
+          "na_reason": "",
+          "confidence": 0.98
+        },
+        {
+          "criterion_id": "c03",
+          "name": "Идентификация",
+          "answer": "no",
+          "answer_label": "Нет",
+          "value": null,
+          "score": 0.0,
+          "max_score": 20.0,
+          "weight": 20.0,
+          "effective_weight": 20.0,
+          "explanation": "Оператор раскрыл сведения об ограничении на конкретном счёте без подтверждённой проверки личности. Системного подтверждения верификации или явного успешного прохождения проверки до раскрытия данных нет.",
+          "evidence": [
+            {
+              "message_index": 11,
+              "timestamp": "02:54",
+              "quote": "На вашем счёте действует ограничение на вывод."
+            },
+            {
+              "message_index": 12,
+              "timestamp": "03:29",
+              "quote": "Я ещё не подтверждал личность."
+            }
+          ],
+          "checked_range": {
+            "from_index": 0,
+            "to_index": 11
+          },
+          "na_reason": "",
+          "confidence": 1.0
+        },
+        {
+          "criterion_id": "c04",
+          "name": "Корректная и полная консультация",
+          "answer": "scale",
+          "answer_label": "5",
+          "value": 5,
+          "score": 5.0,
+          "max_score": 20.0,
+          "weight": 20.0,
+          "effective_weight": 20.0,
+          "explanation": "Дана лишь общая подсказка об ограничении и разделе приложения. К концу диалога клиенту не объяснили, как восстановить возможность вывода, и не организовали дальнейшую проверку.",
+          "evidence": [
+            {
+              "message_index": 0,
+              "timestamp": "00:00",
+              "quote": "Опять не получается вывести деньги. Проверьте, что случилось со счётом."
+            },
+            {
+              "message_index": 11,
+              "timestamp": "02:54",
+              "quote": "На вашем счёте действует ограничение на вывод. Детали смотрите в приложении."
+            },
+            {
+              "message_index": 12,
+              "timestamp": "03:29",
+              "quote": "Я ещё не подтверждал личность. Где в приложении смотреть?"
+            },
+            {
+              "message_index": 13,
+              "timestamp": "04:17",
+              "quote": "В разделе вывода."
+            }
+          ],
+          "checked_range": {
+            "from_index": 9,
+            "to_index": 14
+          },
+          "na_reason": "",
+          "confidence": 0.94
+        },
+        {
+          "criterion_id": "c05",
+          "name": "Эмпатия и клиентоориентированность",
+          "answer": "yes",
+          "answer_label": "Да",
+          "value": null,
+          "score": 15.0,
+          "max_score": 15.0,
+          "weight": 15.0,
+          "effective_weight": 15.0,
+          "explanation": "Оператор не допускал неуважительных реплик и отреагировал на конкретную проблему с выводом денег, сообщив об ограничении и направив клиента в раздел вывода. Отдельное выражение сочувствия формулировкой критерия не требуется.",
+          "evidence": [
+            {
+              "message_index": 0,
+              "timestamp": "00:00",
+              "quote": "Опять не получается вывести деньги."
+            },
+            {
+              "message_index": 11,
+              "timestamp": "02:54",
+              "quote": "На вашем счёте действует ограничение на вывод. Детали смотрите в приложении."
+            },
+            {
+              "message_index": 13,
+              "timestamp": "04:17",
+              "quote": "В разделе вывода."
+            }
+          ],
+          "checked_range": null,
+          "na_reason": "",
+          "confidence": 0.89
+        },
+        {
+          "criterion_id": "c06",
+          "name": "Управление диалогом, скорость и грамотность",
+          "answer": "scale",
+          "answer_label": "4",
+          "value": 4,
+          "score": 6.0,
+          "max_score": 15.0,
+          "weight": 15.0,
+          "effective_weight": 15.0,
+          "explanation": "Клиенту пришлось переспрашивать из-за неопределённых формулировок оператора «оно», «стоит», «тот раздел». Последующие ответы про ограничение и раздел вывода понятны, поэтому диалог не является полностью бессвязным.",
+          "evidence": [
+            {
+              "message_index": 9,
+              "timestamp": "02:23",
+              "quote": "Сейчас. Там оно у вас по счёту стоит, поэтому через тот раздел опять."
+            },
+            {
+              "message_index": 10,
+              "timestamp": "02:32",
+              "quote": "Что стоит? И через какой раздел?"
+            },
+            {
+              "message_index": 11,
+              "timestamp": "02:54",
+              "quote": "На вашем счёте действует ограничение на вывод. Детали смотрите в приложении."
+            },
+            {
+              "message_index": 13,
+              "timestamp": "04:17",
+              "quote": "В разделе вывода."
+            }
+          ],
+          "checked_range": null,
+          "na_reason": "",
+          "confidence": 0.99
+        },
+        {
+          "criterion_id": "c07",
+          "name": "Завершение",
+          "answer": "no",
+          "answer_label": "Нет",
+          "value": null,
+          "score": 0.0,
+          "max_score": 5.0,
+          "weight": 5.0,
+          "effective_weight": 5.0,
+          "explanation": "Оператор ответил на последний вопрос клиента, но не попрощался и закрыл чат. Условие завершения не выполнено.",
+          "evidence": [
+            {
+              "message_index": 13,
+              "timestamp": "04:17",
+              "quote": "В разделе вывода."
+            },
+            {
+              "message_index": 14,
+              "timestamp": "04:33",
+              "quote": "Оператор закрыл чат."
+            }
+          ],
+          "checked_range": {
+            "from_index": 13,
+            "to_index": 14
+          },
+          "na_reason": "",
+          "confidence": 1.0
+        },
+        {
+          "criterion_id": "c08",
+          "name": "Грубые ошибки",
+          "answer": "yes",
+          "answer_label": "Да",
+          "value": null,
+          "score": 0.0,
+          "max_score": 0.0,
+          "weight": 0.0,
+          "effective_weight": 0.0,
+          "explanation": "Выявлено раскрытие конфиденциальной информации: оператор сообщил об ограничении на вывод по счёту до подтверждения личности собеседника.",
+          "evidence": [
+            {
+              "message_index": 11,
+              "timestamp": "02:54",
+              "quote": "На вашем счёте действует ограничение на вывод."
+            },
+            {
+              "message_index": 12,
+              "timestamp": "03:29",
+              "quote": "Я ещё не подтверждал личность."
+            }
+          ],
+          "checked_range": null,
+          "na_reason": "",
+          "confidence": 0.96
+        }
+      ],
+      "model": "gemini-3.8-flash, gpt-6.1-sol",
+      "cost_usd": 0.07592,
+      "evaluated_at": "2026-11-08T06:15:16+00:00"
+    }
+  ]
+}
